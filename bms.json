@@ -5,5 +5,13 @@
         "templates": [
             "megatip"
         ]
+    },
+
+    "Teste2": {
+        "phone_number_id": "728001287065051",
+        "token": "EAAZAUvYmtyqkBPACZCUXZAqDLDxlnJ5QYDaX6x5rJptMzRwQP9kDuAQka2d1g6DVn4XYQsp5lfAb0gvxiKVskGrUljDUMF9GQMFPfdVdYfx0FYSH2ffCcxcn8kCjf83Lwp5IHMsS1PiPi2InXUJEw5CqCxkbySr40JBsx8pZCG8kjXCgtyi6hljilRDGlViIZADc2RjtImd932xZBIvy1NTLZA06YhwzjzY399Y8LPv07Yn",
+        "templates": [
+            "vanusa"
+        ]
     }
 }
