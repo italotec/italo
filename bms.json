@@ -1,25 +1,9 @@
 {
     "Teste": {
         "phone_number_id": "728092360391787",
-        "token": "EAALDwZAkXxRoBPG1wZAIHgS0mLJX2v9xAEj6GvFXmTPxZB8ebEmCPfWBxnDX98ku5yZBsW6iMqlNdHPdcM2ZBaLaNFAqY6uDV36v7vbPhXRqcG1RccCg4k7LWGZBfikPSgl0gJyNGtxyNk7YHV2qJZBpudezhJafMZBzMNa7gADUr1GNo4kyw26lLf8FyiogxuvM2naLyuyTQQdjhprrW2XNIu9pnWZB5Yg4Khn3A6zzCvZAAMAcNgsvVVvYzLdQE05wZDZD",
+        "token": "EAAT07d3yACYBPDGAFvivM4cII2WMIzsse3VXkl4Ei30J3koXbDQYlpfZCeca4HRQUZB1mj8uL4qBjbaIs84tG7F1uIXZCmc81OZBa8XMou7iHpyZCt1OkaBViFTUFZAa94JymW6FKSTVPtZCrbPFeavAVCISvb02LnCCame9muxQJTLrMlkYBbfxoOcGeYrnNRSZC90h0nqmWElj5eXGobPkFOJKLBsCH5BLGMQNtZCQFDqD6XKigaVLXZClo0fsmTdV6K",
         "templates": [
             "megatip"
         ]
-    },
-
-    "Teste2": {
-        "phone_number_id": "728001287065051",
-        "token": "EAAZAUvYmtyqkBPACZCUXZAqDLDxlnJ5QYDaX6x5rJptMzRwQP9kDuAQka2d1g6DVn4XYQsp5lfAb0gvxiKVskGrUljDUMF9GQMFPfdVdYfx0FYSH2ffCcxcn8kCjf83Lwp5IHMsS1PiPi2InXUJEw5CqCxkbySr40JBsx8pZCG8kjXCgtyi6hljilRDGlViIZADc2RjtImd932xZBIvy1NTLZA06YhwzjzY399Y8LPv07Yn",
-        "templates": [
-            "vanusa"
-        ]
-    },
-
-    "Teste3": {
-        "phone_number_id": "665844379956432",
-        "token": "EAALDwZAkXxRoBPARzeYbBZBWzjZA3okZBwgl8rGPoR9CdB4acSaJDtLMZAGiQ6HZC0kvqS26mUm6ZCGZAnWPzPn9wIhM2yWfoRjuL1WYi9HAqcMuBUzKWzs9yy2ZBXwDoraeTJs8daS8CFzqyrN9XoJSNf5TMubGhxCRhNjCW22R9QJROECFQuZBZCBe3ZC2Ii3dV9L9T6vVzCFzxoDjMJq2GZBG1Y38V4riArsJmuxa9MeYR7D2LRRPlfxdZAvWbLtvcdkAZDZD",
-        "templates": [
-            "raimunda"
-        ]
-    },
+    }
 }
