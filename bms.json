@@ -5,5 +5,13 @@
         "templates": [
             "megatip"
         ]
+    },
+
+    "Teste2": {
+        "phone_number_id": "665844379956432",
+        "token": "EAALDwZAkXxRoBPFbXdPe66UxmZCZAMZB6FeoR194xbcZBj7ZAig00D9qR9ZA52EJrzpAxWZCVqhjtiR6TGPf7dw6PmrFaaPnSbuZBMpAK6UhkBTZCmVLvjVoYadUsYUFjRbQmejWDAFq1ZAoIRbzwwbcKUBzszgtBYBUxE0DFi0iPOcNfAsuGat9NZAMerAsMgUkFOySCepdim0ZBs1Ir230isixXPFMxZBOAusZACj5SjZAPC1lHFDTZAVJqgZASrIf0HzlioigZDZD",
+        "templates": [
+            "dojunio"
+        ]
     }
 }
