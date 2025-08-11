@@ -10,8 +10,6 @@ import random
 import string
 import uuid
 
-#comment
-
 BM_FILE = 'bms.json'
 LOG_FILE = 'sent_log.csv'
 TEMPLATE_LANG = 'pt_BR'
