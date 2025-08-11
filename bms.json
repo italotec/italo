@@ -13,5 +13,13 @@
         "templates": [
             "vanusa"
         ]
-    }
+    },
+
+    "Teste3": {
+        "phone_number_id": "665844379956432",
+        "token": "EAALDwZAkXxRoBPARzeYbBZBWzjZA3okZBwgl8rGPoR9CdB4acSaJDtLMZAGiQ6HZC0kvqS26mUm6ZCGZAnWPzPn9wIhM2yWfoRjuL1WYi9HAqcMuBUzKWzs9yy2ZBXwDoraeTJs8daS8CFzqyrN9XoJSNf5TMubGhxCRhNjCW22R9QJROECFQuZBZCBe3ZC2Ii3dV9L9T6vVzCFzxoDjMJq2GZBG1Y38V4riArsJmuxa9MeYR7D2LRRPlfxdZAvWbLtvcdkAZDZD",
+        "templates": [
+            "raimunda"
+        ]
+    },
 }
