@@ -15,18 +15,21 @@ LOG_FILE = 'sent_log.csv'
 TEMPLATE_LANG = 'pt_BR'
 LOCK = threading.Lock()
 
+# Proxy do Tor (Tails usa porta 9050 por padrão)
+TOR_PROXY = {
+    "http": "socks5h://127.0.0.1:9050",
+    "https": "socks5h://127.0.0.1:9050"
+}
+
 # === Random generators ===
 def random_namespace():
-    # Generate UUID and insert underscores at the same positions as your format
     u = str(uuid.uuid4())
-    parts = u.split('-')  # UUID format: 8-4-4-4-12
+    parts = u.split('-')
     return f"{parts[0]}_{parts[1]}_{parts[2]}_{parts[3]}_{parts[4]}"
 
 def random_parameter_name(length=6):
-    # Generate a random variable-like name starting with a letter
     return random.choice(string.ascii_lowercase) + ''.join(random.choices(string.ascii_lowercase + string.digits, k=length-1))
 
-# These will be randomized ONCE per run
 NAMESPACE_VALUE = random_namespace()
 PARAM_NAME_VALUE = random_parameter_name()
 
@@ -88,7 +91,7 @@ def enviar_template(lead, phone_number_id, token, log_enabled=True):
     }
 
     try:
-        response = requests.post(api_url, headers=headers, json=payload)
+        response = requests.post(api_url, headers=headers, json=payload, proxies=TOR_PROXY, timeout=30)
         print(f"{telefone}: {response.status_code} | {response.text} | namespace={NAMESPACE_VALUE} | param={PARAM_NAME_VALUE}")
         if response.status_code == 200 and log_enabled:
             with LOCK:
@@ -146,7 +149,6 @@ def modo_envio(random_mode=False):
             [lead for _, lead in leads_filtrados.iterrows()]
         )
 
-# === MAIN ===
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--cadastrar', action='store_true', help='Cadastrar nova BM')
