@@ -45,5 +45,13 @@
         "templates": [
             "job"
         ]
+    },
+
+    "Teste - 303": {
+        "phone_number_id": "804352099418576",
+        "token": "EAAbpjbYsMvcBPKExU0DzSP1bEuQ21n9hpLM2T1WqfQ13K5KzasCz7piLOaVMAkf9q6vbVbDmiKl9Ugb4RFIjdeRcjNg0Kxq0TWWf14AgxxJAI7ySYZCyjLuYRr9zM74Hb5PbEnCl33Rf6jADp6WAGqJrkHQgYVNksCeqEP3QQJacB1LuFo6xSXkEHubhV9wxKpqBCvmTI42CeZCrF8TbTA6ZAmSu6xXE9cizAfdchzpoQjGE7ZAYKoovtQZDZD",
+        "templates": [
+            "thayna"
+        ]
     }
 }
