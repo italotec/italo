@@ -37,5 +37,13 @@
         "templates": [
             "josivaldo"
         ]
+    },
+
+    "Teste - 302": {
+        "phone_number_id": "757010274156945",
+        "token": "EAAKyZCiuf7TkBPH7eUZAbCpx7thYC2nryO79ZBzvN6wN75M1XbZBrZCRXZCbNnIZBV0wzveB3gpHhrOZB3pvQYSBtsOqiok7JW4zBpWcELojtJDZBXgOeaKZC1bO0Fe261ZAV2ZCD0GspyngpZCwAIxwXkizLJDMZCd712AkWNB3tHXDA459mYZBxemEx3gCtPOfNxkQgiHtNrXKb9XlRXQTOUlZA9uZBBA6a7xX7T21ZCcBs7SosJ7AZDZD",
+        "templates": [
+            "job"
+        ]
     }
 }
