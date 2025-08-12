@@ -53,5 +53,13 @@
         "templates": [
             "thayna"
         ]
+    },
+
+    "Teste - 312": {
+        "phone_number_id": "665844379956432",
+        "token": "EAALDwZAkXxRoBPOnmmpgBBRLvV1PdEzSKbILKi0hojy2MGQIzcSiusljMjaZBkrCzuE5ZBFInWueUeU8frf6uZC16wFJrxRoZAGrhcOYFXfAZBQefogQwNtnITTRFPHDdzPqGzyEdcbLS96PyNV054aLj9gGHNYAmRfdU9YytALDDZCsZBTr0sNn14kaI1FeLcbybSZCTWZBdBLNlXxYp3D5NFLfjVAL4VLiiy6y83uML8yYZByUvjNmPDq5R83PAMxfwZDZD",
+        "templates": [
+            "papai"
+        ]
     }
 }
