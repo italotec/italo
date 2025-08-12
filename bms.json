@@ -30,4 +30,12 @@
             "robson1"
         ]
     },
+
+    "Teste - 300": {
+        "phone_number_id": "768871609635411",
+        "token": "EAAZAojAOwj3sBPGZAtv0QKL6jWmlKEqt50XeZBZBRNNmS4c1HsbrxccEfUAeo3Q3fbqTEPm4K2q4IRgCqD6aA0mE6wRsFn0MZCMQRWpZBsJrpXz9OZASkRkV6rJod8itbB5KHZCwsbt3Xwj7V1QwODWgMLijhSpwBPZAcNSjztq401vakeTPKbg0KLlrlg6UTlq9EXDRJZBLPe2zJ1ZCUeCpdZA6QKCeUTcFNFNDFTkPbgXNUAZDZD",
+        "templates": [
+            "josivaldo"
+        ]
+    }
 }
