@@ -13,5 +13,13 @@
         "templates": [
             "raquel"
         ]
+    },
+
+    "Teste - 293": {
+        "phone_number_id": "751342951394131",
+        "token": "EAA5H9ZA50QloBPFsPZA8xpcSUgpHxS2eN96l9lU4QwTvOsTi6l1uvVAaJfNN6ZBbkaSzqzk93X29nKZA0irPUPZBAqbxl9w8ygGZB2lnr9j4H4uqbrEl2Tv1vODA4jigYwe07EMLouaz6dXQZBq5XYWhv6DpJ40Jd8TCTPcRaxZClJMinyLjlv0V0fJcZBug1oGvBx2X9t6VNsyf54SMJAi0X2SeP4k9Dz9eqd91WbMsw11ncQY4ZD",
+        "templates": [
+            "mangueiras1"
+        ]
     }
 }
