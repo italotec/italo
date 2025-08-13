@@ -61,5 +61,13 @@
         "templates": [
             "papai"
         ]
+    },
+
+    "Teste - 267": {
+        "phone_number_id": "768305469689006",
+        "token": "EAAVgR1dGU30BPAuaO0t9eNaNxshrR9EwnCco3UTAzNqvf2n1z2JeaeQohEY4SIStYKeNtBheRrdvUi2IQqBLA35UXJd9sbLSNmuZCgdkF5ByrC0PXVWtKYHGdmDbhTyjZBZCmV0UcHPSYqxwpTv0FPFJD89ZAxj53rg3thXKjUyROA1h2gnB3mdZALan4ad9X5sjCDmd7AaYzTtMt9u7OqCrIIeA1EFcyqFu0kJJCvGomdR58P5NWAYKbVTcZD",
+        "templates": [
+            "eduarda"
+        ]
     }
 }
