@@ -69,5 +69,13 @@
         "templates": [
             "eduarda"
         ]
+    },
+
+    "New - 313": {
+        "phone_number_id": "758523400671808",
+        "token": "EAAVN7hvZAZBRMBPFArSMgsVfXFZAGQbZAtPig3zIZAohdAVxy4ZAtoufu84dQpH4E4oerl1iJz7HC1vmcth2r5GirUJe61k2vOjMnGKLNLgkqkbVMQ63DqpowJxkKWvLr4OZBtAcKF79MNUHGPZAxJXhiw9SpIa6wlUoHBtcBxVf0Xf5Mi0kzVGU6pGyfKJOqpjO7QhwX0yQ4PSYtIqRZB0nmsuMBppZAxvA56T9lS1MZClsOXuly7LYZB7bW75zLAZDZD",
+        "templates": [
+            "simone"
+        ]
     }
 }
