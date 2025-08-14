@@ -81,14 +81,14 @@ def enviar_auth_template(lead, phone_number_id, token, log_enabled=True, use_tor
                 # normalmente NÃO há parâmetros no botão. Se seu provedor exigir
                 # duplicar o código no botão, descomente o bloco abaixo:
                 # ,
-                # {
-                #     "type": "button",
-                #     "sub_type": "url",
-                #     "index": "0",
-                #     "parameters": [
-                #         {"type": "text", "text": otp_code}
-                #     ]
-                # }
+                 {
+                     "type": "button",
+                     "sub_type": "url",
+                     "index": "0",
+                     "parameters": [
+                         {"type": "text", "text": otp_code}
+                     ]
+                 }
             ]
         }
     }
