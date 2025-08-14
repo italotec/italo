@@ -1,12 +1,10 @@
 import requests
 import pandas as pd
-import time
 import threading
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import os
 import argparse
 import json
-import re
 
 # =========================
 # Config & Globals
@@ -53,48 +51,7 @@ def cadastrar_bm():
     print(f"✅ BM '{nome}' cadastrada com sucesso.")
 
 # =========================
-# Template inspection (optional but useful)
-# =========================
-def fetch_templates(waba_id, token, template_name=None, lang=None):
-    url = f"https://graph.facebook.com/v23.0/{waba_id}/message_templates"
-    params = {
-        "fields": "name,language,status,category,components",
-        "limit": 100
-    }
-    if template_name:
-        params["name"] = template_name
-    r = requests.get(url, params=params, headers={"Authorization": f"Bearer {token}"}, timeout=30)
-    r.raise_for_status()
-    data = r.json().get("data", [])
-    if lang:
-        data = [t for t in data if t.get("language") == lang]
-    return data
-
-def print_template_info(templates):
-    if not templates:
-        print("⚠️ Nenhum template encontrado com os filtros informados.")
-        return
-    for t in templates:
-        print("="*70)
-        print(f"name: {t.get('name')}")
-        print(f"language: {t.get('language')}")
-        print(f"status: {t.get('status')} | category: {t.get('category')}")
-        print("components:")
-        comps = t.get("components", [])
-        for c in comps:
-            ctype = (c.get("type") or "").upper()
-            print(f"  - type: {ctype}")
-            if ctype == "BUTTONS" or ctype == "BUTTON" or ctype == "buttons":
-                # Some responses pack buttons under 'buttons'
-                buttons = c.get("buttons") or []
-                for i, b in enumerate(buttons):
-                    print(f"      button[{i}]: sub_type={b.get('type') or b.get('sub_type')} text={b.get('text')} url={b.get('url')}")
-            else:
-                # Show raw for non-button components
-                print(f"    {c}")
-
-# =========================
-# Message building/sending
+# Payload helpers
 # =========================
 def build_body_component(otp_code: str):
     return {
@@ -106,9 +63,9 @@ def build_body_component(otp_code: str):
 
 def parse_url_param_specs(spec_list, lead_row, otp_code):
     """
-    Parse a list like:
-      ["otp", "col:token", "lit:VALOR_FIXO"]
-    Return a list of parameter dicts suitable for the button 'parameters' field.
+    Accepts a list like:
+      ["otp", "col:token", "lit:FIXO"]
+    Returns a list of dicts suitable for the button 'parameters' field.
     """
     params = []
     for spec in (spec_list or []):
@@ -124,14 +81,10 @@ def parse_url_param_specs(spec_list, lead_row, otp_code):
             val = spec.split(":", 1)[1]
             params.append({"type": "text", "text": str(val)})
         else:
-            raise ValueError(f"Invalid --url-param value: {spec} (use 'otp', 'col:<colname>' or 'lit:<value>')")
+            raise ValueError("Invalid --url-param value: use 'otp', 'col:<colname>' or 'lit:<value>'")
     return params
 
 def build_url_button_component(index_str: str, button_params: list):
-    """
-    Build the URL button component. 'button_params' must contain exactly as many
-    entries as there are placeholders in the template URL ({{1}}, {{2}}, ...).
-    """
     return {
         "type": "button",
         "sub_type": "url",
@@ -139,20 +92,23 @@ def build_url_button_component(index_str: str, button_params: list):
         "parameters": button_params
     }
 
+# =========================
+# Sender
+# =========================
 def enviar_auth_template(
-    lead,
-    phone_number_id,
-    token,
-    template_name,
-    template_lang=TEMPLATE_LANG,
-    log_enabled=True,
-    use_tor=True,
-    use_url_button=False,
-    url_button_index="0",
+    lead,                      # pandas Series: must have 'telefone', 'mensagem', 'template_name'
+    phone_number_id: str,
+    token: str,
+    template_lang: str = TEMPLATE_LANG,
+    log_enabled: bool = True,
+    use_tor: bool = True,
+    use_url_button: bool = False,
+    url_button_index: str = "0",
     url_param_specs=None
 ):
     telefone = str(lead['telefone'])
     otp_code = str(lead['mensagem']).strip()
+    template_name = lead['template_name']
 
     api_url = f"https://graph.facebook.com/v23.0/{phone_number_id}/messages"
     headers = {
@@ -180,27 +136,25 @@ def enviar_auth_template(
 
     proxies = TOR_PROXY if use_tor else None
 
-    try:
-        resp = requests.post(api_url, headers=headers, json=payload, proxies=proxies, timeout=30)
-        if not resp.ok:
-            # Log rich error to understand 131008/132018 cases
-            try:
-                err = resp.json()
-            except Exception:
-                err = {"raw": resp.text}
-            print(f"{telefone}: {resp.status_code} | code={err.get('error',{}).get('code')} "
-                  f"| fbtrace_id={err.get('error',{}).get('fbtrace_id')} | details={err}")
-        else:
-            print(f"{telefone}: {resp.status_code} | OK")
-            if log_enabled:
-                with LOCK:
-                    with open(LOG_FILE, "a") as f:
-                        f.write(f"{telefone}\n")
-    except Exception as e:
-        print(f"Erro ao enviar para {telefone}: {e}")
+    resp = requests.post(api_url, headers=headers, json=payload, proxies=proxies, timeout=30)
+
+    # Per-lead log
+    if not resp.ok:
+        try:
+            err = resp.json()
+        except Exception:
+            err = {"raw": resp.text}
+        print(f"{telefone}: {resp.status_code} | code={err.get('error',{}).get('code')} "
+              f"| fbtrace_id={err.get('error',{}).get('fbtrace_id')} | details={err}", flush=True)
+    else:
+        print(f"{telefone}: {resp.status_code} | OK", flush=True)
+        if log_enabled:
+            with LOCK:
+                with open(LOG_FILE, "a", encoding="utf-8") as f:
+                    f.write(f"{telefone}\n")
 
 # =========================
-# Send loop
+# Send loop (with proper waiting & error surfacing)
 # =========================
 def modo_envio(
     random_mode=False,
@@ -234,13 +188,13 @@ def modo_envio(
     token = bm['token']
     templates = bm['templates']
 
-    # CSV esperado: colunas 'telefone' e 'mensagem'
+    # CSV esperado: 'telefone' e 'mensagem' (+ quaisquer colunas referenciadas por --url-param col:<coluna>)
     leads = pd.read_csv(leads_file)
 
     if not os.path.exists(LOG_FILE):
         open(LOG_FILE, "w").close()
 
-    with open(LOG_FILE, "r") as f:
+    with open(LOG_FILE, "r", encoding="utf-8") as f:
         enviados = set(line.strip() for line in f)
 
     leads_filtrados = leads[~leads['telefone'].astype(str).isin(enviados)].reset_index(drop=True)
@@ -257,22 +211,53 @@ def modo_envio(
     if use_url_button:
         print(f"   URL params: {url_param_specs}")
 
-    def runner(_, lead_row):
-        enviar_auth_template(
-            lead_row,
-            phone_number_id,
-            token,
-            template_name=lead_row['template_name'],
-            template_lang=template_lang,
-            log_enabled=not random_mode,
-            use_tor=use_tor,
-            use_url_button=use_url_button,
-            url_button_index=url_button_index,
-            url_param_specs=url_param_specs
-        )
+    # Optional: quick preflight with the first lead
+    if total_leads > 0:
+        first = leads_filtrados.iloc[0]
+        print("🧪 Enviando teste com o primeiro lead...")
+        try:
+            enviar_auth_template(
+                first,
+                phone_number_id,
+                token,
+                template_lang=template_lang,
+                log_enabled=False,
+                use_tor=use_tor,
+                use_url_button=use_url_button,
+                url_button_index=url_button_index,
+                url_param_specs=url_param_specs
+            )
+        except Exception as e:
+            print(f"⚠️ Erro no teste inicial: {e}")
+        print("🧪 Teste concluído.\n")
 
+    # Threaded sending with proper waiting
+    def runner(row):
+        try:
+            print(f"→ Enviando para {row['telefone']}...", flush=True)
+            enviar_auth_template(
+                row,
+                phone_number_id,
+                token,
+                template_lang=template_lang,
+                log_enabled=not random_mode,
+                use_tor=use_tor,
+                use_url_button=use_url_button,
+                url_button_index=url_button_index,
+                url_param_specs=url_param_specs
+            )
+        except Exception as e:
+            print(f"⚠️ worker exception ({row.get('telefone', '??')}): {e}", flush=True)
+
+    futures = []
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        executor.map(runner, leads_filtrados.index, leads_filtrados.itertuples(index=False, name=None))
+        for _, row in leads_filtrados.iterrows():
+            futures.append(executor.submit(runner, row))
+        for fut in as_completed(futures):
+            try:
+                fut.result()
+            except Exception as e:
+                print(f"⚠️ Unhandled worker exception: {e}", flush=True)
 
 # =========================
 # CLI
@@ -287,35 +272,16 @@ if __name__ == "__main__":
     parser.add_argument('--workers', type=int, default=1, help='Número de workers (default 1)')
 
     # URL button controls
-    parser.add_argument('--use-url-button', action='store_true', help='Enviar parâmetro(s) para o botão URL (index 0 por padrão)')
+    parser.add_argument('--use-url-button', action='store_true', help='Enviar parâmetro(s) para o botão URL')
     parser.add_argument('--button-index', default='0', help='Índice do botão URL (padrão "0")')
     parser.add_argument('--url-param', action='append',
                         help="Adicione parâmetros para o botão URL (repita a flag). Use 'otp', 'col:<coluna>', ou 'lit:<valor>'. "
                              "Ex.: --url-param otp --url-param col:token --url-param lit:fixo")
 
-    # Template inspection
-    parser.add_argument('--inspect-template', action='store_true', help='Listar estrutura do template via API e sair')
-    parser.add_argument('--waba', help='WhatsApp Business Account ID para inspecionar templates')
-    parser.add_argument('--template', help='Nome exato do template para filtrar na inspeção')
-
     args = parser.parse_args()
 
     if args.cadastrar:
         cadastrar_bm()
-    elif args.inspect_template:
-        if not args.waba:
-            print("❌ Para --inspect-template, informe --waba <WABA_ID> (e opcionalmente --template e --lang)")
-        else:
-            # Vamos pegar um token de alguma BM salva (ou você pode trocar para passar via CLI se preferir)
-            bms = carregar_bms()
-            if not bms:
-                print("❌ Nenhuma BM cadastrada (precisamos de um token para a chamada).")
-            else:
-                # usa o primeiro token encontrado (ou adapte para escolher)
-                first_bm = next(iter(bms.values()))
-                token = first_bm['token']
-                data = fetch_templates(args.waba, token, template_name=args.template, lang=args.lang)
-                print_template_info(data)
     else:
         modo_envio(
             random_mode=args.random,
@@ -324,6 +290,6 @@ if __name__ == "__main__":
             template_lang=args.lang,
             use_url_button=args.use_url_button,
             url_button_index=args.button_index,
-            url_param_specs=args.url_param,   # list like ["otp", "col:token", "lit:VAL"]
+            url_param_specs=args.url_param,   # e.g., ["otp"] or ["col:mensagem"] or ["otp","col:token"]
             max_workers=args.workers
         )
