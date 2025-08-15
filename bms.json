@@ -85,5 +85,21 @@
         "templates": [
             "rafael"
         ]
+    },
+
+    "New - 316": {
+        "phone_number_id": "686766681196258",
+        "token": "EAAK5SfHor2QBPNVS5vwtswFa1XLZB9fXzZAEienTL1IqDyZAfQGP5DfNx2EInojO8aR41hkuu0wOIimEjYxcS4YEzZBsyQnkLTdZBpeoCd3AUwrpmZBvsy1JsukmxeZCAwdGnbRdbHfZBDW7b7aoM1zo66JhE2UrpxIZC8Drf7HMduC6ZBv11VVMr4p60Ozw8I0ApfCTLthxSEOed7O15FQjkxrLz06hV17cSIAmsag0wf",
+        "templates": [
+            "pescoco"
+        ]
+    },
+
+    "New - 318": {
+        "phone_number_id": "760358660494329",
+        "token": "EAAb8GTVq3OcBPD4Ewy7tsA8QLW7MGfjevd0rDLFPTFa4aLMgnnNZCpySn1DDvWTZAYwFN6e2fRGx8mjqDmMF5ELbk2QZBBlEnfc78xba9BhCw7ZBYUdhsGd7iOjVDKiRWiPLK9kzjKLpMvhZCPum9NLkcKhg4Xr0YRYZAsn30ptBiTZCUDhFuIEfvPioMZCxKlTzndQRSdj2oM4lnJ4N8F9yIVYf7w4opSXZChsUm8nodyGNWWZCOKLQOFj4QZD",
+        "templates": [
+            "sobrecu"
+        ]
     }
 }
