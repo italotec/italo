@@ -97,9 +97,9 @@
 
     "New - 318": {
         "phone_number_id": "760358660494329",
-        "token": "EAAb8GTVq3OcBPD4Ewy7tsA8QLW7MGfjevd0rDLFPTFa4aLMgnnNZCpySn1DDvWTZAYwFN6e2fRGx8mjqDmMF5ELbk2QZBBlEnfc78xba9BhCw7ZBYUdhsGd7iOjVDKiRWiPLK9kzjKLpMvhZCPum9NLkcKhg4Xr0YRYZAsn30ptBiTZCUDhFuIEfvPioMZCxKlTzndQRSdj2oM4lnJ4N8F9yIVYf7w4opSXZChsUm8nodyGNWWZCOKLQOFj4QZD",
+        "token": "EAAb8GTVq3OcBPBKQ0ZBSmIlCNZBWsaUTd0TTJKs15N8GmkJbkTZCp82LDKhfgTFKzchoyy6fDZCoII4g1JoASWZAoCZA6kpyKWR4OQlbZAajd4CRntwwZCBS3oNRgTwMashZB1WA62dZBHmn0MK16STBrXdLqZAc5qw3qLvwsKreW8dipeW65dFdd81RRm7ZAatfATgWQ6kfBNMSQJEdF56vCFwhRwFJipsCa8bAmwOi6ZCxJZCMo9jkZCxow2u4XCp",
         "templates": [
-            "sobrecu"
+            "auth"
         ]
     }
 }
