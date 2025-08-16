@@ -57,7 +57,7 @@
 
     "Teste - 312": {
         "phone_number_id": "665844379956432",
-        "token": "EAALDwZAkXxRoBPOnmmpgBBRLvV1PdEzSKbILKi0hojy2MGQIzcSiusljMjaZBkrCzuE5ZBFInWueUeU8frf6uZC16wFJrxRoZAGrhcOYFXfAZBQefogQwNtnITTRFPHDdzPqGzyEdcbLS96PyNV054aLj9gGHNYAmRfdU9YytALDDZCsZBTr0sNn14kaI1FeLcbybSZCTWZBdBLNlXxYp3D5NFLfjVAL4VLiiy6y83uML8yYZByUvjNmPDq5R83PAMxfwZDZD",
+        "token": "EAALDwZAkXxRoBPJEXVYfZCqKxkZBMjSuAXDhLrY7XnZBr4mkVa7ZCSjp39qcdApxZCNNCVPOBtrK5lf2co4EQunkKPpQojepgmnJOYP1aFwAhvZCwaEYfIgWQ6lrsQ2C4ZBuN1l38pn7nZASR7czk3V65xVzz2UCGwWkmZBZAs9oBwl0bSTKhtZCFFDltgTfvP6BSmhoSRRqmOhHZAaZAIABdXjsnhbs1flRBxBEw14YshHfuwYj50RQOaZB9nZCC00fvg4viwZDZD",
         "templates": [
             "papai"
         ]
@@ -102,4 +102,5 @@
             "auth"
         ]
     }
+    
 }
