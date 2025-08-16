@@ -25,17 +25,17 @@
 
     "Teste - 298": {
         "phone_number_id": "741622142365930",
-        "token": "EAASmVKsLuVUBPGS9KJHM3ZCByOMEjwNqyVohTjqtSsQW9oykRgzz30jJpHXfj7qGgMTYKRp0gw1I0FBSeZBs6vQhjOc5Cg21x88pbyX0envGYIYQV0Q1hMqnWsTIa5QeZBqJgOiuaDPz8Io49npWmDKEgnDZCfZApkLJUbS66gu45a8SqsoKNQKnSh1Jz4GSbi9gJorZBndsd1iJbZAmCMkbAMzuH33ahRfqpa1YpnyUtX3co2WdxZBpbCImKQZDZD",
+        "token": "EAASmVKsLuVUBPAIjnfK5uzfAJdGYEU9l0HlRxzSwzgAIedCJ1iY8ZB4IkJ3iCuKHVAZBehhW19BvpZBJoLzyK4lZAP7bIe6cLB9A8fhEspuZCSiuY0tpppRljUYlE8GwZCoIyLeP5VmXsZAKbeK3QLda8ujSnkOxhBRNd5PzjZCU4TuX6zZA7CcuTNPgeRCpwQkMZBqPFDXSUsxnTnU3TL2mgCCh6QmOeDi2amEUg8ChR4VvmJZBizobH3GYODcNqEZD",
         "templates": [
-            "flow"
+            "bruta"
         ]
     },
 
     "Teste - 300": {
         "phone_number_id": "768871609635411",
-        "token": "EAAZAojAOwj3sBPGOMsCKFx6oZBh4L6gp1ZC0ZBVgw0u8syUR2VWZAw0aaBjVL8yrgClPPGUZBSmF02Mz5lomQuC5iLvFN5UncgZA3LFmiOHPAAKMX742EtPvf0BUgC42fT6zjVyP51QCRzp7hL3btctBwJo9pr6kIHreE3qTFW5wfFO5uWwVe84mZBxVukWN8Q1FtU799oQQ9BETxKxjJgTTaGr23LzE9j85aT6NZA2QKxPEZD",
+        "token": "EAAZAojAOwj3sBPAn6Oz7d7fecgLpE8EgvH1o477KjJsD2csJDR5wV45SgbfZB1gOd7M5a3NPVHQNxEFb9l6qLJ78vWiAse7b6BTu0V7PFRf24169oxnolt4w6zPSLrsULlvOlUQRdZAK9mZCjKVPUAjYkA3odFZAbXE1ujm8POF8STu595zIeOCYSO3EZAdmpBwKb1cF26Gis9FEzz7jXPPDFcCZCSjUwY41XQozcRTNAZDZD",
         "templates": [
-            "josivaldo"
+            "rest"
         ]
     },
 
@@ -65,9 +65,9 @@
 
     "Teste - 267": {
         "phone_number_id": "768305469689006",
-        "token": "EAAVgR1dGU30BPAuaO0t9eNaNxshrR9EwnCco3UTAzNqvf2n1z2JeaeQohEY4SIStYKeNtBheRrdvUi2IQqBLA35UXJd9sbLSNmuZCgdkF5ByrC0PXVWtKYHGdmDbhTyjZBZCmV0UcHPSYqxwpTv0FPFJD89ZAxj53rg3thXKjUyROA1h2gnB3mdZALan4ad9X5sjCDmd7AaYzTtMt9u7OqCrIIeA1EFcyqFu0kJJCvGomdR58P5NWAYKbVTcZD",
+        "token": "EAAVgR1dGU30BPC0vBZC6zpqm465ZBTPcKAdNZAWiLOg10znBDZCS1jKqBKFZAWQPuww62WJ3Issl3tMZClZCSgzBkZAFpfXpihot1M9vhOoMAYyFUftH0FwHVZA5ZAjIP60qHTn4DFXFiJgU9NGZCHsZAS9MGrsRnnjdiNLTO8UD0ZCEdeS3e1dqhNBL1i1PtmjMvjhSuyGOuZBiiLJerteZAhQl0PKlnLqpZB4WnOI3gIqHr3gD7guqezht5NgdXcq4QwZDZD",
         "templates": [
-            "eduarda"
+            "vivendo"
         ]
     },
 
