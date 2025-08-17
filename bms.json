@@ -101,6 +101,14 @@
         "templates": [
             "auth"
         ]
+    },
+
+    "ISAAC": {
+        "phone_number_id": "738691502651454",
+        "token": "EAA4SdY7WNTABPJaMZBefhWidnGHzsVhqjXZAjHYfVN4OMx7XEIGZCU2agwzpABMwZAZAQlVXRwaHplEMPPimxKZBMiv9PWHbZBX8ibRQFSZCZBMaY89oHknjYa1cWsd8DO29k9Pq8qxTsiZBmNZBrORdEdIPvEeUzNgbwjPuuEg28uizfbWxQA8ABB05lEO2F933HMjQOqfJE0oSS5g08BAnlXpAnzWwZAjxJQNWiPXRztHpYuL3EQZDZD",
+        "templates": [
+            "flick"
+        ]
     }
     
 }
