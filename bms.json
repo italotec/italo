@@ -109,8 +109,14 @@
         "templates": [
             "flick"
         ]
+    },
+
+    "New - 299": {
+        "phone_number_id": "769660292890409",
+        "token": "EAAQ4oI970ZBEBPKzm7OYKrUWZBG1ZAsmna3aV4sYZCkw0WRNZCk2SGZACVU5x7htDzHLKPwF1RrjWFyWEW9tp20BXPzZBhqu0sZA7M72mrWCSID2TnYq7qXRHoZAFHvVlqrHlpXZAw25UBCZBvdewMrzXx5oP6dch7nImiOIV0A71vbkwQDSztsZBIu0ZBWL6ZBHJc9VbQJdOq8ZAdIopeq2QyHIXEWiEryj6W1zHUmH2qarp85eQZDZD",
+        "templates": [
+            "brown"
+        ]
     }
-
-
     
 }
