@@ -159,3 +159,5 @@ if __name__ == "__main__":
         cadastrar_bm()
     else:
         modo_envio(random_mode=args.random)
+
+
