@@ -82,7 +82,9 @@ def enviar_template(lead, phone_number_id, token, log_enabled=True):
                 {
                     "type": "body",
                     "parameters": [
-                        {"type": "text", "parameter_name": PARAM_NAME_VALUE, "text": nome}
+                        {"type": "text", "parameter_name": PARAM_NAME_VALUE, "text": nome},
+                        {"type": "text", "parameter_name": "serie", "text": telefone},
+                        {"type": "text", "parameter_name": "indicacao", "text": "serie"}
                     ]
                 }
             ]
@@ -123,7 +125,7 @@ def modo_envio(random_mode=False):
     token = bm['token']
     templates = bm['templates']
 
-    leads = pd.read_csv("100k.csv")
+    leads = pd.read_csv("base10pra100k.csv")
 
     if not os.path.exists(LOG_FILE):
         open(LOG_FILE, "w").close()
