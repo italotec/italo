@@ -1,16 +1,9 @@
 {
-    "Teste - 327": {
-        "phone_number_id": "779654691893790",
-        "token": "EAAJPfzxJGZBgBPfilTRDZCHmZAbGPYzIYfECZAMZBYOC4ZAe84STh6Ku6LIIu3hLhkF7up5GuuJGSZB2NPIZC7eZC10zlRfRY72cReNpJo2C0Um2ssmlxtuJZCS83ZBIRqddQ9SOz1pxZBOrqlgXQsfaQZB5qnf591hUFZBy3hIkJE3NrZAJXAspW46nqTPQYuAb5RoVZBJKZB5bghI9zsbDYJ5ZC3PZC8ZCTVUNxreakSxY8PbHZCdNwF9NLzQZDZD",
+    "Teste - 330": {
+        "phone_number_id": "779177758609678",
+        "token": "EAAK1EiC5Pn4BPc4EwX2cGXqyz4F8aZBKGgUV2ZCVE7w2Fb0EOwkXznMNXIZBAnqnZB8lgYJSYotfbbwvq8uv4GaCxC2JGL91lrI3zRLFaCs3uSo7ZBHXhzLsZAnh0w7A3HNHeEHQVdJC7kOOCvoYoG7d6lBDzfQBtVgUyGvfcc8b47PQZBW8fDMZBq13BGunusBb439xhVjZB3yXCSgXjHW3IqZBSZALifJMtXrQKv3jAbNOPVV",
         "templates": [
-            "marte"
+            "lucas"
         ]
-    },
-    "Teste - 329": {
-        "phone_number_id": "781642588372456",
-        "token": "EAAc55EubMlgBPRXTm1iDeqwJkKOegCys3xBboQtQ9tZAGTl8xCPx1I4vGpTMusUOhnBzRq17IzEOZCBDVGmeQ4ZBykXmStvexezMKb5CBM6WlUMgrqqe3C95EFNNU4il7taZCWjuS1fBb9Psw9ATsFZCqdRbUfroMdLkHRAd5utQH720ODxp9RfJMiH14n7n2hgHOuN8WzYss4bQ6hL5xbwDOxokaasF8t9hNO3yLUF2YbwZDZD",
-        "templates": [
-            "gabrielle"
-        ]
-    },
+    }
 }
