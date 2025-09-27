@@ -62,8 +62,13 @@ def cadastrar_bm():
 
 def enviar_template(lead, phone_number_id, token, log_enabled=True):
     telefone = str(lead['telefone'])
-    nome = str(lead['mensagem'])
+    nome = str(lead['nome'])
+    produto = str(lead['produto'])
+    mensagem = str(lead['mensagem'])
+    link = str(lead['link'])
+    linkcorreto = str(lead['linkcorreto'])
     template_name = lead['template_name']
+
 
     api_url = f"https://graph.facebook.com/v23.0/{phone_number_id}/messages"
     headers = {
