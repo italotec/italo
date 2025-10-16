@@ -1,9 +1,9 @@
 {
-    "Teste - GABRIEL": {
-        "phone_number_id": "780282925169262",
-        "token": "EAAK9RUtnmwUBPpoCpLsxuPgY1ubrRVFuExYVOcjL2oeuVyVrahhL47xnspU0BQeEgoXA5P6FsC3FxtgzM2NTUL6xGXJ1XIWZBvjKCPYXwGWdN7vZClbVc5OWvl1iMx2OZCsItUYjZCFuLxRsS61oZAEaCy33QzJjX2wT80UV20VNGJzbZAzWQ1uj7BHMZAlpU3iYVi1TU1bFEVEzdTs6PiYjmwA4okMZA8zshwdAklH3JfFf0ZBy0riUoqWlCEs7u5wZDZD",
+    "Teste - BM01": {
+        "phone_number_id": "826196927248664",
+        "token": "EAAdHAoS5vMQBPj2g3koiWUSyHYoz36zWtyktpLe2JbryVpe8SiVCnWdwm0oWbAQIrt7Lp1V3wFGp8NrzaEvbp7kZAFdqXXsaejStLiDqN5ZBZBpefay4BZB7ZASmMUh97ADkJCG2Jujdkw8UFxwrrHhCUJc6uXL769AitTZBJcBZBbrJV0G3ucWC9ECoahwfsErtYHPZAoMjkwHwvBzV5EfzXrGucEEPTWmZBHRNdcVT46VwpGwZDZD",
         "templates": [
-            "holzschuh_cinco"
+            "atualiza_integrado"
         ]
     }
 }
