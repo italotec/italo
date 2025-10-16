@@ -1,9 +1,9 @@
 {
     "Teste - BM01": {
-        "phone_number_id": "826196927248664",
-        "token": "EAAdHAoS5vMQBPj2g3koiWUSyHYoz36zWtyktpLe2JbryVpe8SiVCnWdwm0oWbAQIrt7Lp1V3wFGp8NrzaEvbp7kZAFdqXXsaejStLiDqN5ZBZBpefay4BZB7ZASmMUh97ADkJCG2Jujdkw8UFxwrrHhCUJc6uXL769AitTZBJcBZBbrJV0G3ucWC9ECoahwfsErtYHPZAoMjkwHwvBzV5EfzXrGucEEPTWmZBHRNdcVT46VwpGwZDZD",
+        "phone_number_id": "752748671264527",
+        "token": "EAFjjDRsBcJABPkhnjkULcbIzZC1ZB3egPZAJyloci7TL1wWizuso3zEBBzud8n5guk8ef6bqZBuHqPWVP6ACO5trXU62wAwtAB4cCbNxu7ZCLXuGGSllEUBA6dtJ7wA7KURPZAKSqV5jdnukMUQlx7Y3JlM9BUFSTZAIGubDjnn2npXfYXyhi6ZC8oj5ZBGtc8x2PEdLgnLOlZBGqsJIbHH3MBXB6YeVeyr8kIYoAjZC7QOkLHZBBKjoRTlVhapDjgZDZD",
         "templates": [
-            "atualiza_integrado"
+            "atualiza_jardon"
         ]
     }
 }
