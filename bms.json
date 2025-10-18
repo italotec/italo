@@ -1,9 +1,23 @@
 {
     "Teste - BM01": {
-        "phone_number_id": "824239020773807",
-        "token": "EAAhegkZBeLukBPoKX891IVomeC4rcB9qmtMSSwVefhSkVbcmW6qpfUHsEAZBrZBNZAGMf09O0Up4cdZAbkyISPTtE8u8ZCFT9RuUZCuZCBYISlsW8KVZCQcUpXPrvcRkCOfmDI5MnC4BU8Kb0z7kpiHEWCmWxfJCjJUL0EQ6yYQErJxVKzZBk2hlLgoiyZAtbiUe0douVrGvxZBh7ZAyFZALOO0ULoOeNH5JtJBt57uHOHWxHL5H9vxkuaXTqXo0CVoMQx5zKM",
+        "phone_number_id": "818425444690281",
+        "token": "EAAXik8CLUFcBPq6qTsNOesQZB3FJc94w1soEytSxJ04ON5zWnZBWwBx1ZADw0MZBZAB5YCsQWrjYZAZA3GUu0ZCNwZCZAi8oloiYcve1KorYX4l8GYgP8Yf07ocmJuye2qsPzXmKc7idFKnjqZBmpPXvi6ZAMYSZCivK7RQM0GQhBV87hAoHvecuK5tF90cdRZC0jJ6w3TssKdnVI8wn61hK6BM2bLGqpTiSY1dpQZCBti44eXwLW5OywowdQWSpg1UNwZDZD",
         "templates": [
-            "atualizada_palin"
+            "atualizacao_justsell"
+        ]
+    },
+    "Teste - BM02": {
+        "phone_number_id": "777166908822576",
+        "token": "EAA8jaMIbKGEBPvc5WlV2AOaOSiSDIYikkVoaBxrzyHbnoZCwHE9z876cVvckaUyzZCw5bsPcujQ9QsouVY0BfFgdvzxhxYWOrl75KdsHV1dT8BS0rsQ6qxq6vHB75fnABSG19G4BwqNbhrZALU0yMtZB7t5UNJiul03LyM2XYgkcLBcZBMfQssdn7qIeuZAsQMfWhPuGnDGR3vJYSiHd3HYHZAaTCTULClvLdediBnX7dg3e93NtPcdxxRwD50IjgZDZD",
+        "templates": [
+            "atualizada_movie"
+        ]
+    },
+    "Teste - BM03": {
+        "phone_number_id": "827496567118122",
+        "token": "EAAQ0NjzWBQwBPoNXliZB5miq66OUa6IqhtOB7rfSnUayLcMOEZAzhu5sZBZBAxP9A4ZCsQsvAmXP7HVww2d6TaGvYV4YhFSJpLKdrQSVMMepUW9O8DJY5XGkKyhZB6YZBN3gufYY6HT0rKxxBOVE6tf37m185n51T6QYaEtgdRy2AbkGFelZBZCx2jXySZBGtZCmmng3jZAyFCuNOAj40QABm9xA7QWBrFI2eIw8C1Mh3LsMh5GYRpDcUvhD3MGXefmeVTgZD",
+        "templates": [
+            "atualizada_calia"
         ]
     }
 }
