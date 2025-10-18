@@ -19,6 +19,12 @@
         "templates": [
             "atualizada_palin"
         ]
+    },
+    "Teste - BM04": {
+        "phone_number_id": "743261602213600",
+        "token": "EAAMAiYfuhlsBPvPtupqWC5M3hZBSlRRcELok3GdIdHc6P967gWe1Vj9BJX0qhHBZAa92BezQrqjTA90DzUeqOMvhmumNM0dZAiWEhnFl671O3uZC1lUT0ci9oXLe4VGJ9OPTSbzQiGtxp2xciZBpBfWvq9BpDyJuxuPbHYv4ySkjEZCEXiHjkjfebP3Qs3PdtnsWc44UrauODckjnugMb9c4U6ZAK8B8zOmE1ZBqwzX8Ik3VD0qxFcmTd1ao460ZD",
+        "templates": [
+            "atualizada_onfield"
+        ]
     }
-    
 }
