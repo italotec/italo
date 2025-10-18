@@ -1,6 +1,5 @@
 import requests
 import pandas as pd
-import time
 import threading
 from concurrent.futures import ThreadPoolExecutor
 import os
@@ -56,25 +55,48 @@ def cadastrar_bm():
         "token": token,
         "templates": templates
     }
-
     salvar_bms(bms)
     print(f"✅ BM '{nome}' cadastrada com sucesso.")
 
 def enviar_template(lead, phone_number_id, token, log_enabled=True):
-    telefone = str(lead['telefone'])
-    nome = str(lead['nome'])
-    produto = str(lead['produto'])
-    mensagem = str(lead['mensagem'])
-    link = str(lead['link'])
-    linkcorreto = str(lead['linkcorreto'])
-    template_name = lead['template_name']
+    telefone = str(lead.get('telefone', '')).strip()
+    nome = str(lead.get('nome', '')).strip()
+    template_name = str(lead.get('template_name', '')).strip()
+    # PEGAR DIRETO DO CSV: coluna 'link'
+    link_var = str(lead.get('link', '')).strip()
 
+    if not telefone or not template_name:
+        print(f"⚠️ Lead faltando telefone ou template_name: {lead}")
+        return
 
     api_url = f"https://graph.facebook.com/v23.0/{phone_number_id}/messages"
     headers = {
         "Content-Type": "application/json",
         "Authorization": f"Bearer {token}"
     }
+
+    components = [
+        {
+            "type": "body",
+            "parameters": [
+                {"type": "text", "parameter_name": PARAM_NAME_VALUE, "text": nome},
+                {"type": "text", "parameter_name": "serie", "text": telefone},
+                {"type": "text", "parameter_name": "indicacao", "text": "serie"}
+            ]
+        },
+        {
+            "type": "button",
+            "sub_type": "url",
+            "index": "0",
+            "parameters": [
+                {
+                    "type": "text",
+                    "parameter_name": "link_dinamico",
+                    "text": link_var  # <- vai exatamente o que está na coluna 'link'
+                }
+            ]
+        }
+    ]
 
     payload = {
         "type": "template",
@@ -83,23 +105,14 @@ def enviar_template(lead, phone_number_id, token, log_enabled=True):
             "namespace": NAMESPACE_VALUE,
             "name": template_name,
             "language": {"code": TEMPLATE_LANG},
-            "components": [
-                {
-                    "type": "body",
-                    "parameters": [
-                        {"type": "text", "parameter_name": PARAM_NAME_VALUE, "text": nome},
-                        {"type": "text", "parameter_name": "serie", "text": telefone},
-                        {"type": "text", "parameter_name": "indicacao", "text": "serie"}
-                    ]
-                }
-            ]
+            "components": components
         },
-        "to": f"{telefone}"
+        "to": telefone
     }
 
     try:
         response = requests.post(api_url, headers=headers, json=payload, proxies=TOR_PROXY, timeout=30)
-        print(f"{telefone}: {response.status_code} | {response.text} | namespace={NAMESPACE_VALUE} | param={PARAM_NAME_VALUE}")
+        print(f"{telefone}: {response.status_code} | {response.text} | namespace={NAMESPACE_VALUE} | param={PARAM_NAME_VALUE} | link={link_var}")
         if response.status_code == 200 and log_enabled:
             with LOCK:
                 with open(LOG_FILE, "a") as f:
@@ -130,6 +143,7 @@ def modo_envio(random_mode=False):
     token = bm['token']
     templates = bm['templates']
 
+    # CSV precisa ter: telefone, nome (opcional), link, e o script atribui template_name
     leads = pd.read_csv("base10pra100k.csv")
 
     if not os.path.exists(LOG_FILE):
@@ -166,5 +180,3 @@ if __name__ == "__main__":
         cadastrar_bm()
     else:
         modo_envio(random_mode=args.random)
-
-
