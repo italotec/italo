@@ -62,8 +62,6 @@ def enviar_template(lead, phone_number_id, token, log_enabled=True):
     telefone = str(lead.get('telefone', '')).strip()
     nome = str(lead.get('nome', '')).strip()
     template_name = str(lead.get('template_name', '')).strip()
-    # PEGAR DIRETO DO CSV: coluna 'link'
-    link_var = str(lead.get('link', '')).strip()
 
     if not telefone or not template_name:
         print(f"⚠️ Lead faltando telefone ou template_name: {lead}")
@@ -75,6 +73,7 @@ def enviar_template(lead, phone_number_id, token, log_enabled=True):
         "Authorization": f"Bearer {token}"
     }
 
+    # Apenas BODY com variáveis (o botão é fixo no template, então não precisa enviar componente de button)
     components = [
         {
             "type": "body",
@@ -82,18 +81,6 @@ def enviar_template(lead, phone_number_id, token, log_enabled=True):
                 {"type": "text", "parameter_name": PARAM_NAME_VALUE, "text": nome},
                 {"type": "text", "parameter_name": "serie", "text": telefone},
                 {"type": "text", "parameter_name": "indicacao", "text": "serie"}
-            ]
-        },
-        {
-            "type": "button",
-            "sub_type": "url",
-            "index": "0",
-            "parameters": [
-                {
-                    "type": "text",
-                    "parameter_name": "link_dinamico",
-                    "text": link_var  # <- vai exatamente o que está na coluna 'link'
-                }
             ]
         }
     ]
@@ -112,7 +99,7 @@ def enviar_template(lead, phone_number_id, token, log_enabled=True):
 
     try:
         response = requests.post(api_url, headers=headers, json=payload, proxies=TOR_PROXY, timeout=30)
-        print(f"{telefone}: {response.status_code} | {response.text} | namespace={NAMESPACE_VALUE} | param={PARAM_NAME_VALUE} | link={link_var}")
+        print(f"{telefone}: {response.status_code} | {response.text} | namespace={NAMESPACE_VALUE} | param={PARAM_NAME_VALUE}")
         if response.status_code == 200 and log_enabled:
             with LOCK:
                 with open(LOG_FILE, "a") as f:
@@ -143,7 +130,7 @@ def modo_envio(random_mode=False):
     token = bm['token']
     templates = bm['templates']
 
-    # CSV precisa ter: telefone, nome (opcional), link, e o script atribui template_name
+    # CSV precisa ter: telefone, nome (opcional)
     leads = pd.read_csv("base10pra100k.csv")
 
     if not os.path.exists(LOG_FILE):
