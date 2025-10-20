@@ -1,58 +1,23 @@
 {
     "Teste - BM01": {
-        "phone_number_id": "777166908822576",
-        "token": "EAA8jaMIbKGEBPkJrDBQttLSrAEXZBH4Euxv3pyRmVpfyF2JkmqsyWICYyax6x0OKvp7jpWBobCrwCtlk7tssMgZBkeT2AHhvGRxYjVLdPRBAZA2T99l7fCk5CYdtrBNdXeSLPsx0aYkUAKW29bIV9hmHc4waGDLZCTglJsrEdbGJkhuVVZAZBGIOehADJ4VZBLdcBebJYeBJiX5x78WQQoqWanB22nt1tYh0l7qqcHEIzdEXquvbs0I8ZAYb2WGy8AZDZD",
-        "templates": [
-            "atualizada_movie"
-        ]
-    },
-    "Teste - BM02": {
-        "phone_number_id": "818425444690281",
-        "token": "EAAXik8CLUFcBPtkYPZBxi0vF33Iz9qlgk6iNXQuOc35A5N3gbZBXSy9mUPuFZCrDQTIztEzshYOaW6ZA2imeEaHXSX5BLUx4j05VYGVZB6yiCZAnqGcpcPIVyZCnQUZA2zyHhNtZCHxZA2CDlxqvHHa3cZA2vTiKB4q42tfdSegAZBHIUsAIcMU6rf2XZCLW4e4ZAplMTJldtqaLxIVlbcT0lEeoiaMTFPff82QWIcHnGqiJmyQRx15dZA3H5zBDrz4gQZDZD",
-        "templates": [
-            "atualizacao_justsell"
-        ]
-    },
-    "Teste - BM03": {
-        "phone_number_id": "824239020773807",
-        "token": "EAAhegkZBeLukBPtt1PgVkdEAU8Dx5QzvCKPoooHfa3O3jVyeBbXC41TlEZBZCgLulQp9JmQJuLZBlZBAVE07tuZB8U2b6JvL8V6xZCE4fU6ZA6ZAJetFGt3ky7f2JsXOQ4qdVxFt8DTFdfJ0peoyJzqKNFcbEzsNx0IZBSB0QM4GqFPDt4KE20lrSh3BuHgBeZAXHiLAT3lwZB4Ttazv1RSjw3gHZA1Oa8fODZCwM6EYavhImZBr4GrjNlatZALlEbPkoddgqgZDZD",
-        "templates": [
-            "atualizada_palin"
-        ]
-    },
-    "Teste - BM04": {
-        "phone_number_id": "743261602213600",
-        "token": "EAAMAiYfuhlsBPvPtupqWC5M3hZBSlRRcELok3GdIdHc6P967gWe1Vj9BJX0qhHBZAa92BezQrqjTA90DzUeqOMvhmumNM0dZAiWEhnFl671O3uZC1lUT0ci9oXLe4VGJ9OPTSbzQiGtxp2xciZBpBfWvq9BpDyJuxuPbHYv4ySkjEZCEXiHjkjfebP3Qs3PdtnsWc44UrauODckjnugMb9c4U6ZAK8B8zOmE1ZBqwzX8Ik3VD0qxFcmTd1ao460ZD",
-        "templates": [
-            "atualizada_onfield"
-        ]
-    },
-    "Teste - BM05": {
-        "phone_number_id": "892925957226406",
-        "token": "EAA7kfXaEHUQBPhLkSpUZAhzKyDAmXZCasnGaiDSIbDurVONZAxdB3p3zJyGvk6x1eZBqm02KHEo0CtKZBC3zPOpgF6DhE9Kz8eoVlwiKYwjIO0zfVJGM9vrO6defZBAV23X8lu8PJHRjdUem3qolmnbmYAvUQQ5hBewTuq80At0ZCgK9OaJPy4vedXXQV0PZAWD0qJ4yaazoEzGxZCkdg7rwLMu4u8ecwxcu3AxfcdJPEwQZDZD",
-        "templates": [
-            "atualizacao_capital"
-        ]
-    },
-    "Teste - BM06": {
-        "phone_number_id": "800197973179970",
-        "token": "EAATJ4T2Ck4MBPkKBD0iJZA03eox7PKctKCjdequ4hyAZAf6sNBrf6agsozjIcpfmcCRDSU2rieKXLUymz8YL8gIZC9UgZAKTsyr2z5V9O8n4PwCDF45rwkKcoxnzELWHtB7sYW4yOVijF1pEyoHb3M0fxMDKiuBjjX2YEd0gZBcHNxYr154kIVNnDZAbebHAZBJ01MexJJm7z0VLwDSkNj4vweWZBpJ1ogkoQi7IbyYNillScgZDZD",
-        "templates": [
-            "atualizada_consultoria"
-        ]
-    },
-    "Teste - BM07": {
         "phone_number_id": "790590670811336",
-        "token": "EAALZChRZCq4IcBPmRnLh4HCDuZASIctvTIksptNZBnZA26ZB6slq3naNlh4fxe98nO3ldhy0JGbyMUud8v0ggBHfY1V6NVVfKq3UsO7FHi8Cdf3LQoUqg6hzqJe9x4YZBqLMAWWqug4kHnV1tN1G2dMArgRZC8k2vcMcyY8U0ZB7UrqT0jR5Cg66xHiW1nc2P4luH4r7mQ6HTjVZBg6pgcBwXooHPZCXIQsVvenQIZCFkz6cqwZDZD",
+        "token": "EAALZChRZCq4IcBPsn76qUuOHmimxp3FwwP6wGtZBfz5urvS3oZCFCVpEunKB7nGqxIiLPu4meUxwwWKJizuZCVltW6mprCQZCVG642wiNuZBCOk9Oqh9tP018gNfNSsRgD5dmbJnOoi4m0gKnOBzifPjSeXZB61te2beHD0ZBZBr0esQBeArbqiiwSLo98CoXF3nBqDAhTbyY1WyO0ZCtVrg5y4ZAnjCubWAuKNSg93XlcOSVAZDZD",
         "templates": [
             "atualiza_sinergia"
         ]
     },
-    "Teste - BM08": {
-        "phone_number_id": "849181048275565",
-        "token": "EAAtpGsBuDnABPlaIXR4ZA6naeL58h9dkJlpp6TbJENBgMrrnocasqiIpi6KaKZBftXefO7l12tND8lcWcuaOxZCi29oGwj3KSZC4BirSfWO6fRen9tRncgrfzxIIGwzWGXZBr401WrlVcZCCCaby4sRQxXItDZBkfgKheLWW6m63Bva7ciZCpp8JEXh9Db0dMdyKZALBcBAVRC5ovffIzbWx5ZAriuAToT0GcAfTcO627F5hMZD",
+    "Teste - BM02": {
+        "phone_number_id": "800197973179970",
+        "token": "EAATJ4T2Ck4MBPvZBbEcatsBD2b2o5vSRjGE9sfMQA7hsvUI6wROGfCTqhKZCMABcc0hv7HD9xLxogZCjanio3L88hYTlDafX9ic1Hiz9nS8YF0IzawlyvKZBFkcwsnMa1ZAfINVt1b6KP0n4AEzsXNtfZBOZBrEyT6MgqRRczCg6eMMxvteZBcK2CS4jAgsrHT9i0XyNW09a0BQaDZAhV710TJOKlm260kXqZAZCSZASzl98tac2fAZDZD",
         "templates": [
-            "atualizacao_plus"
+            "atualizada_consultoria"
         ]
     },
+    "Teste - BM03": {
+        "phone_number_id": "777166908822576",
+        "token": "EAA8jaMIbKGEBPrhg6ehqp5C8grcyBMYR082TfoVZBpXuw9Gc6gX7cVctkGKKZCJ1vuzf7Dzrzz7b9vDK3xZBVH3mCVQ8BlL6VlDLF0Rre6E0itQTLccfOrUTN95QaLSvz95Odu7zJmopLNBjhNkDHYq9Trx6bVNy3uFSYakZCX8uUGJDLl9v9MZAiBdpjMV8gYtZB66B5AU59rcNUx4nkC2K8juTGlsbgO6VNf4bZBg9iDnp5F4POQa8iIFBDp0mwZDZD",
+        "templates": [
+            "atualizada_movie"
+        ]
+    }
 }
