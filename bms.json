@@ -1,16 +1,16 @@
 {
     "Teste - BM01": {
-        "phone_number_id": "790590670811336",
-        "token": "EAALZChRZCq4IcBP2FpZComdufKPwcr2K0ZBWQN0JuM1GsIgfvkhQ60IbIcqZC1SrHvRLtRw0K7tpMkJ7uTJKL5XlPdJMeSHTBKH7xxGPDtl8rSQdOQUdZCvK6Mk5VsIJlJK2yqfa63NliTJ9zut9rsz34sQ3V2iZCcEUvaMgMaaFNmyWU33cp1ObfYZCbwr3C3M8Smqofjn0RKRPTOonv7khS3AO6LPojRbKquwFaqxJuhvfWJVnWgxgb5elvGM6rVjD4TtLmMYQMIonO27MBjDqSUCkLB5XgWpIQgZDZD",
+        "phone_number_id": "856211427573919",
+        "token": "EAAb4gfmKFD4BP3aZCIijccHh9sT5aHcv8MoyvIZAFT1ZCyRMtUNXTUZCvu8xvDskS4mAdz3X8SBq55p4vCZBwsPoQBiyX65IZBmbq50KaJhSOJ6HZBybN3aZBCnmlMGZBj9YbOVPSsEjA67BUTu5x1VndT39lq5BR04K15Ic2Tv8guFuYVzOwuZAyxf9ZC7LKg89lg3wlynrlXrD2pci7RviJ8ormYef1DLqAuZBnxiEbGGT6WbyVik8hrtvdZBRCTYahv2tfbhxJNoaDUZBTotX2oUZAZBQ9o0j",
         "templates": [
-            "pedrin03"
+            "atualizacao_valerio"
         ]
     },
     "Teste - BM02": {
-        "phone_number_id": "777166908822576",
-        "token": "EAA8jaMIbKGEBP5YrZBMKa6iBXctUgWpikstFveakVziFelC20yjbQidyJUJ761PwZAVILZCVJlYS3K4zxu5y5sk9oz21YTwZBAdylQgddUYZAS64aYoTApZCS5LxvHlAnNJXA96ziqoP8LSFsr4RNFolXaE9ZCEyyEB7bMQmsF4wtlN1ga9s6ZA3YCmUEICcRWgOp7oRbHlWjzdmRn2ZBHsIjuVphfWpUMtdvVMMZC3Mi3kJnZC5Gn8sq1B5Xmt79QbkX7w2ZB42ZAfnpTYhsZBOk1bGQIDVRrBWrzY1OTHAlLLYMZD",
+        "phone_number_id": "900552926463233",
+        "token": "EAARZBZABgKPFEBP9gZCpj5UZAyWuGZCdb7FeBWMS2i1pNCOxtPv9cNKaZCDN69fAt1b9xIn9ImFrKbjvbk1XyzOLcj8ZANLgRsNpVUqZBXwwzSmkF7buZBCyfDcCTFM3GP7XSvVAGlmUZAsJDCGD3uXa3aezppGXaixx7qZAKqDoGQFZANM85g3kdpEySPq9ZAChnHy1hFtnBMR089jzdKn9ginPVqgX8SZA5Y6jcKkdbn6ga2bQZDZD",
         "templates": [
-            "atualizada_movie"
+            "atualizacao_diego"
         ]
     }
 }
