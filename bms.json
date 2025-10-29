@@ -1,16 +1,16 @@
 {
     "Teste - BM01": {
-        "phone_number_id": "856211427573919",
-        "token": "EAAb4gfmKFD4BP8M7MSl5leniHHm9v5s9rk0AEdT4mkgVYikUIigUSY7BvxAa6pOpgEOs4Kiyc3owf0WCkY9kk8A0QYAB5hus2bVPF3DFBWs2vwnTBmxSp3ksRU3xC3ECkiEnEXCPRXZAjfBJWozn4E1WGeetLpVdP9yGzLn1CehcZBZAd5SeHDyDZCqHW4qyf770ZCbTyyVqTyT30fQFW2yuBuUXdlf6oW6styOTq6T4ZAANePPnbsC3RZB3p0QcVf96QOqwjCzoMT6UCzkziOpbsC0XeGHlZAoFvgZCYP3UZD",
+        "phone_number_id": "900552926463233",
+        "token": "EAARZBZABgKPFEBP6sg6DNyyYfucAoGcFenbkt6ILtckgepgBWMOKBEm16jIjZCZAoIeuHeXLato3s0k1oBiKfciJpV3fVPQCEDayhLtWgyhLbTB0sxgnwByHSdE10wlBZBNkFDeWYXP67I6W9Y35THZBTZBCEtkk7Rs4UEPHs2PMW40UCjACw93NYYurnORuEU4G1svYk0ZCnFOZCXy7bZBtwQgwMkyPDX8ksWrmgXPQYlOtEy5HwpT1ZBsgVnlwwOe5iZAhnw78bTF3mwYmQJspJvdZCJ1heklHzEJ2QeQZDZD",
         "templates": [
-            "atualizacao_valerio"
+            "atualizacao_diego"
         ]
     },
     "Teste - BM02": {
-        "phone_number_id": "900552926463233",
-        "token": "EAARZBZABgKPFEBP9gZCpj5UZAyWuGZCdb7FeBWMS2i1pNCOxtPv9cNKaZCDN69fAt1b9xIn9ImFrKbjvbk1XyzOLcj8ZANLgRsNpVUqZBXwwzSmkF7buZBCyfDcCTFM3GP7XSvVAGlmUZAsJDCGD3uXa3aezppGXaixx7qZAKqDoGQFZANM85g3kdpEySPq9ZAChnHy1hFtnBMR089jzdKn9ginPVqgX8SZA5Y6jcKkdbn6ga2bQZDZD",
+        "phone_number_id": "892925957226406",
+        "token": "EAA7kfXaEHUQBP8cuqbN9Jw40F1v2LcwXlJQrr7jwHu4kHLDmZCljkzjqZBrqyBZBvnZBjsoEZBj1TkQkAjffnbkohBrIfHybfWR6MIf7dmEgXA5WZAuSBItDeQoekLrREYiDaH336rzOOgY4rSuCUavzQvFCXiFwV0KEA3G7ZBYog5I2P4z6PUomKpA1ESa3hXEO4iSPSDnsavMrYZCke14nmeXkO18CCzZCZCuCcbRzyS6qEZAIpK3AbdzZBZB1yWYQNdjj8LIPOZAMmOtclwnuewIWsJzAZDZD",
         "templates": [
-            "atualizacao_diego"
+            "atualizacao_capital"
         ]
     }
 }
