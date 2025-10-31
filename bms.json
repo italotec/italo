@@ -1,14 +1,14 @@
 {
     "Teste - BM01": {
-        "phone_number_id": "763380510201500",
-        "token": "EAAQbshaCmEoBP833El7chRvWcliOtBJrEP9nZB6qJZCHmm7PZB2qchfZAdaPEsr6baDTZAvlzX4zohiz0IylRZCsuUoZAy1naKjR6MZBW7A3lVCgbWZCkkUe3HNkuFdFPYtGj880r1qoJLxb0ZAHoepSK5VQDIcfRSHySBIl1w8JSL8tZBZCygG3gb6AzaSZCfYMvZBL77fZBIUbXqVFlQNDgX203YNuZAirIhtB96ctVPI9ZBfIVVvtvvRnOBlu0xuKXhcXNhcbZBKVWUNaIq7Hbc3NpGZARFeNZBhcaYCZAOCgxBPDgXQZDZD",
+        "phone_number_id": "900552926463233",
+        "token": "EAARZBZABgKPFEBP85z9qow4p4TD8nYg7F25K186RkgmDjlATTlvw3B49vmWZBZBO3BlDUt5Gps19ixGnPKNOHUqdRmOB2BPsuvZCfqugxH6DqKpobTohrXGO7mbwUmGuv8ZCgcjZCOImgrbA3urdWqJBatIOQ7JJP0I6FGIPxryBtu9t1efWRYwCIvic67n0Nj7JnlnzYvjtXiYhEZCAEp61JGjZBLZA0ZA3rkdMoWDcYdntPMiVkOTsVZAXVcaqU4P7ZB6DFPhoBYtHTQQZBSRZAnow16ZAzfe67xZAwKL0GQAZDZD",
         "templates": [
-            "pneus_bh"
+            "atualizacao_diego"
         ]
     },
     "Teste - BM02": {
         "phone_number_id": "892925957226406",
-        "token": "EAA7kfXaEHUQBP8cTqQ4fhqoZB9iOexSgVsQUaSq8WICDh6sjwSTZCTxl3dj8lztZBD8UKyUgpZBKZAH5ojnzN8t3I4WS5A6Tq7ZAwVCg4erKUBbxPgCLKCZBbIgqYnN8HkVKs1fuyt3bLkkmo501BIGpV0TrfKx8vWe55laZAfaQr9hQPzWzeDZBQbLZCRta8jLWIfQPHQ3tBTjSM5drcGG5S3ktSNYevXZAR72ASOMZBZAtZC2HyyHr13SfCEpdsddLyOCvrhbAY6XphGDWzIyZAGM2DAAXMrcW6YtjhDhSpkZD",
+        "token": "EAA7kfXaEHUQBPZBBSb1KP2OdlvjI4JGXwLO7fDXMfuvAdRothQMMB8gZCljfUVN7b16CqdGfP9mZARcWV8jlqEA6AxJooSWH5fpnJkJ1V3z6nMNRMxnJEHXUnYKKRAO8yG9bWZAb0A8MwZBgwr7fv2RwJbc5yrUDnjwUJ74nudEiBA1diZAso3PeD1KYOT8ZC5JyniW5yEtAceZB8a7zWi6ZA44ZAJBHvrfnE0kZAUpo3I9dgHNInmnAUFuxUiZA99eg9t6EhhFHb5fYZBVKRuj76mv8PZCL3fSIrl4gt3XgZDZD",
         "templates": [
             "atualizacao_capital"
         ]
