@@ -1,23 +1,23 @@
 {
     "Teste - BM01": {
+        "phone_number_id": "842596642273837",
+        "token": "EAASuryNkjMkBP65qU3GudGfCZAzUlNhmg72ZCHmWZBD2ZBIDDWZA9i1l6pMbWr8sHHzLAB7fAaSZB4k4hkXKeZCgQaFexoe8tOWIrG6ck29VX4LYTYIDVZAwUiEtI5MGU1xO8OcIR0rGlLimlvZAxqjzWXTbjbg1u6zSoqVWs3yFrLzNV72NA9ZCLrIQYMaqWhzrqSrQIjlaUUZBsBQy9NN3wV3tQo4dL9U6GYbKrNCyBL4OHjuJyO6rVZAtra8Q1ZCRj6ZBsZAz3cn4rzyRG47EsU7n0KXOvpFP44VZC8NnLTHAjgZDZD",
+        "templates": [
+            "maria"
+        ]
+    },
+    "Teste - BM02": {
         "phone_number_id": "828281270371914",
-        "token": "EAALwAtyDqKoBP3AxvvhXJOYHQNCZCKJwumrgz0Q2DC4MMJBy810m8sKcXPtkHuNyigB8V38AUBZCdcWftQ8KLeZA5LvrZBWhJbijf91kv2FZASX5tJoDGxYewMoKZAfSohIyd8vREiVPXXZAbPIo8aHXunvR61RpZCdPm1vwu0cIaHO74i4j73NnXCoqvQTCPdpatdPMCGOkQeufwQUZCyvo9WJ6d0gCGS0IIsgr325Kltae0F7hNvFiIIciHYIIlAdeM6tnrxwqBiv2hY0Jka0BztZBd7AIIaqjfo8AZDZD",
+        "token": "EAALwAtyDqKoBPwP9PWoJMZATmAGGvAYZBVmevsZAzXoh0uszYm7JgXLAiyM1INPzNBhoEUpTS1bKJFNl4UAZAnhCtkUN3ajJglHHrarFLxFmwKYZCEyxZAIaGsWIcWFmgTzuDZBMUK4I38amkRFQlpK8WZAx2yJWrX8Wu3wQghwKwxubucGZCmvWP1hSJHbPaxtsunmeiZBXmro6bZAOAyU9HTqmlzFZCjoNfr7fMRJr8zV5LCXDWjq3vi3l3r7n7ApE7WHdNoNm8ToXCjLII4RZBv1kDgQW2F1y4eQLocAZDZD",
         "templates": [
             "paola"
         ]
     },
-    "Teste - BM02": {
+    "Teste - BM03": {
         "phone_number_id": "882451091612614",
-        "token": "EAAP1sz5XapoBPxS4SoD2g4a205Ym5DzYjaJOVf9IKO0fYeyyLbktWUsduQQEhn2A9qAabfn3ibIsObZAEU76asvBnyZBu5mCF2mdbSScgdeCnPIL2XOiVKfAtn6bZCS4R7vgdbuy45MumJlZA3uoZBCygfUPH85VQzHw6x3MrFMXayQ5G9wNvx0ZBMwNPlZCCpoGXTOQ6Q86gcBB87gwEpe128z6pAHB5EvFcnkZBRilrRYUjeiZBgPveDvkEU3KjTYkdpbvGlKg7BvZCsR2IW543uWZBCJMTHhTs8B6B5TwHYZD",
+        "token": "EAAP1sz5XapoBPxTTyHy9aoLBVpgxfZCOkwZC8DgZCIZBur3TBUsqNUraRmAy2V64FhsGZAjhLwD8UZB4qRtzxhVwJ8kUrW9aCjfvvXU2lx8IXuJfkr0b35TxQtvfzISOCDyf7doAyJ5ReGvztqD4U3ZBNyKwloVvu57BLliURiMbPGgdBM4N4FiBZCv2F77EExvbOeq87C27fjhkZASp5yXIoL2bpuGPXMTHG73R3ZAa2OlfT111HRenTXqzKOLsfBAAENqp84FLHeeRNO7OYJsdp3HjbJQTaLGg8f4RUiSwZDZD",
         "templates": [
             "gean"
-        ]
-    },
-    "Teste - BM03": {
-        "phone_number_id": "842596642273837",
-        "token": "EAASuryNkjMkBP4IJ3OEHoQ6fDwP83s4T1DTLIKhnDr4nYXXtIHY6u1GYqyZAGz3ckLnIZAeCInd2FWyAlHV67NYXiGX6qqkMdYvf4A26EvWU6LbdHQbndjbsrZCMucMs9nwlahTHb4aRzwBAebPAZBFGPqU1uqZBnz8630gRa1spz95dzyyaX3i9JMXoJ8KM5n1xDCUNQHxqiZAozdNjz0JZAqsc1wgteByPkPVX7ei4RrZBGzzGNaVeTKQ7ywsiIZBaj1y0H1i7NBF1OPxtUcDPEkkXQimnS4bkBR6jSxAZDZD",
-        "templates": [
-            "maria"
         ]
     }
 }
