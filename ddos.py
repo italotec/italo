@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 """
-cpf_requester.py
+cpf_tor_requester.py
 
-Sends one GET request per second to:
-    https://emprestimofacilitado.com/js/consulta_a.php?cpf=<CPF>
-
-CPFs are read from a CSV file (column name: 'cpf').
+- Reads CPFs from cpfs.csv (column: cpf)
+- Sends 1 request/second via Tor (Socks5h proxy on 127.0.0.1:9050)
+- Renews Tor circuit every N requests (default: 10)
 """
 
 import csv
@@ -18,14 +17,23 @@ from typing import List
 # --------------------------------------------------------------------------- #
 # Configuration
 # --------------------------------------------------------------------------- #
-CSV_PATH = Path("cpfs.csv")          # <-- change if your file is elsewhere
-CPF_COLUMN = "cpf"                   # column header in the CSV
+CSV_PATH = Path("cpfs.csv")               # <-- change if needed
+CPF_COLUMN = "cpf"                        # column name in CSV
 ENDPOINT_TEMPLATE = "https://emprestimofacilitado.com/js/consulta_a.php?cpf={cpf}"
 
+# Tor proxy (Tails default)
+TOR_PROXY = {
+    "http":  "socks5h://127.0.0.1:9050",
+    "https": "socks5h://127.0.0.1:9050"
+}
+
 # Request settings
-TIMEOUT = 1                        # seconds
+TIMEOUT = 1                              # seconds (Tor can be slow)
 REQUESTS_PER_SECOND = 5000
 DELAY = 1.0 / REQUESTS_PER_SECOND
+
+# Renew Tor circuit every N requests (set 0 to disable)
+RENEW_CIRCUIT_EVERY = 0
 
 # Logging
 logging.basicConfig(
@@ -37,16 +45,15 @@ log = logging.getLogger(__name__)
 
 # --------------------------------------------------------------------------- #
 def load_cpfs(csv_path: Path, column: str) -> List[str]:
-    """Read CPFs from CSV and return a list of stripped strings."""
+    """Load and clean CPFs from CSV."""
     if not csv_path.is_file():
-        raise FileNotFoundError(f"CSV file not found: {csv_path}")
+        raise FileNotFoundError(f"CSV not found: {csv_path}")
 
     cpfs = []
     with csv_path.open(newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         if column not in reader.fieldnames:
-            raise ValueError(f"Column '{column}' not found in CSV. "
-                             f"Available: {reader.fieldnames}")
+            raise ValueError(f"Column '{column}' missing. Found: {reader.fieldnames}")
         for row in reader:
             cpf = row[column].strip()
             if cpf:
@@ -55,42 +62,78 @@ def load_cpfs(csv_path: Path, column: str) -> List[str]:
     return cpfs
 
 
-def send_request(cpf: str) -> None:
-    """Send a single GET request and log the result."""
+def renew_tor_circuit():
+    """Send NEWNYM signal to Tor control port (9051 in Tails)."""
+    try:
+        import socket
+        import struct
+
+        control_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        control_socket.connect(("127.0.0.1", 9051))
+        control_socket.send(b'AUTHENTICATE\r\n')
+        resp = control_socket.recv(1024)
+        if not resp.startswith(b'250'):
+            log.warning("Tor auth failed")
+            return
+
+        control_socket.send(b'SIGNAL NEWNYM\r\n')
+        resp = control_socket.recv(1024)
+        control_socket.close()
+
+        if resp.startswith(b'250'):
+            log.info("Tor circuit renewed (NEWNYM)")
+        else:
+            log.warning(f"NEWNYM failed: {resp!r}")
+    except Exception as e:
+        log.error(f"Failed to renew Tor circuit: {e}")
+
+
+def send_request(session: requests.Session, cpf: str) -> None:
+    """Send one request via Tor and log result."""
     url = ENDPOINT_TEMPLATE.format(cpf=cpf)
     start = time.time()
 
     try:
-        resp = requests.get(url, timeout=TIMEOUT)
+        resp = session.get(url, timeout=TIMEOUT)
         elapsed = time.time() - start
         log.info(
-            f"CPF {cpf} -> status {resp.status_code} "
+            f"CPF {cpf} -> {resp.status_code} "
             f"({elapsed:.2f}s) | {len(resp.content)} bytes"
         )
-        # Uncomment next line if you want to see the raw response:
+        # Uncomment to log snippet of response:
         # log.debug(resp.text[:500])
     except requests.RequestException as e:
-        log.error(f"CPF {cpf} -> error: {e}")
+        log.error(f"CPF {cpf} -> REQUEST ERROR: {e}")
 
 
 def main() -> None:
     cpfs = load_cpfs(CSV_PATH, CPF_COLUMN)
-
     if not cpfs:
-        log.warning("No CPFs to process. Exiting.")
+        log.warning("No CPFs to process.")
         return
 
-    log.info(f"Starting requests (1 per second) for {len(cpfs)} CPF(s)...")
-    for i, cpf in enumerate(cpfs, start=1):
-        send_request(cpf)
+    # Persistent session with Tor proxy
+    session = requests.Session()
+    session.proxies.update(TOR_PROXY)
 
-        # Sleep to enforce exactly 1 request/second (accounting for request time)
+    log.info(f"Starting Tor-routed requests (1/sec) for {len(cpfs)} CPF(s)...")
+
+    for i, cpf in enumerate(cpfs, start=1):
+        send_request(session, cpf)
+
+        # Renew circuit periodically
+        if RENEW_CIRCUIT_EVERY > 0 and i % RENEW_CIRCUIT_EVERY == 0:
+            renew_tor_circuit()
+            time.sleep(2)  # give Tor a moment to establish new stream
+
+        # Enforce 1 request per second
         if i < len(cpfs):
-            sleep_time = DELAY - (time.time() - time.monotonic())
+            elapsed = time.time() - time.monotonic()
+            sleep_time = DELAY - elapsed
             if sleep_time > 0:
                 time.sleep(sleep_time)
 
-    log.info("All requests completed.")
+    log.info("All done.")
 
 
 if __name__ == "__main__":
