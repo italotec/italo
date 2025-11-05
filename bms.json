@@ -1,23 +1,37 @@
 {
     "Teste - BM01": {
-        "phone_number_id": "842596642273837",
-        "token": "EAASuryNkjMkBP7Ymkxl3sDwrpFAfAEaN5V7hnAGEsdzbkfis3LzL1APkPZBnZB3bZBCp1BW1DeioJqDof8wAQcwPlnSHGOuXnNfy6WkqKuSLquNM6XjKcNaVGZCiisM3FQZCvlcoHyuJq5KNJrkiELmQoXkkzKgBSy9klG4kUh1YhFMaQb9z53DcArnA2u0eH6pNeX8UeBAGrZBFZCcZCY3W4lXMPqm1mYPN75NlNa6z24dQFz2pNPZBCbDHPg0vLebHRVk4mnzmnE7ZCIp2wh7wy1NXx8HpVK3WLjPWld6QZDZD",
+        "phone_number_id": "891709934033475",
+        "token": "EAALnYMxR6ZCkBPzI1qhLoeCrI4dfsuTcqoP1kHVJAuGYBmqa885lgd6GD8hhvxx7ZCRZAnzftlaiAH4dSu7rfAuNGh5tQaPzsdkfCfXoDYUiSADqeQLPHOtrppH4mfd41QOqg7BaGMmniDDMZAkpQCqo0WySvC4vU1dJUfz1iCMFZC6r3Vmml4oNIZBH7OrFVQt7lO8ecPc4XXDtp3bGCzrGTcOHQ7cPhSihbHPwCarEbRdJ5vky6phUeyZAeKhhavfeeMzX0tfA91GmlYPvQCbaXCXjXvyaSK3hwZDZD",
         "templates": [
-            "maria"
+            "terezinha"
         ]
     },
     "Teste - BM02": {
-        "phone_number_id": "828281270371914",
-        "token": "EAALwAtyDqKoBP00ZBweBmxomy2xpQxDJRAhkhpMfiFGcpdJfI4tG15LSGzHWZCWNZCIVCPcSvjFlP4IXeJ4ZCIelcYBIiZAaLSpflqZCwWZAUqT9nHAg2FmCDjZChZCMRssMSbf3VhXdDw602ms2NYdkPVlpi68jHwAqQj8ZBFyKuUVZBYS2WH4VokE2SwTbX0acAK3aNJaKJEjR6C3MbybFZCciyoVISsenUeFwr53zSBQXvoHE8rU9EHKlrmeFbr2FUGsZBHqnbqvZBKWjH8z5PFk1w6IMolaA6bF3ZBYiQZDZD",
+        "phone_number_id": "799871226550824",
+        "token": "EAAZBJwea0IGIBP1EfFDkDyVuDTbkQGD4ZCiT7GL3lzkrZBFAxVXWsvLHneRrtFOb9k6WMaRaXZBA3IaDpG3quT3ZAtHP0gy7lNR08XTw5lv2qQLMSqj6Y0p4wqo6nZCZCqZBXrIPcDZAZB6hIBbFd9d1DoPEXWDZBnv2ZBeItPzZBsRakWLcBjZCFVHa5XDtiPZAVa1zcmHuDQLr38zT3S0gdgPP7KPwYHC5soYk5G8sTyYZCLQq6L8H8YLUsGK4mg2z5iDLx4vZAwJqN749Weh4wQ3eAzcL9MQZBVl4XZA8wVXAgA3tKIZD",
         "templates": [
-            "paola"
+            "gabriel"
         ]
     },
     "Teste - BM03": {
-        "phone_number_id": "882451091612614",
-        "token": "EAAP1sz5XapoBP3qQ4fQ7VWIhVXQN5lU1pIcfzfTkBKFsWici9cPl5vnqbTE6TaXiIZBTjZB1bA9hOYTBm4XkYwQZBnTdI2iqrz8ZAqwZAO1MsZCtqRUCQNVqHyFZBZBKRCv771DiEpGxHkZCA7FsJDu8VNcFtlkefViCu8MXyGEE2x3eVWyZBUTbZA8LkVZBN7vdgjKR0NIQxGqxqTOvHnGoOZBjDIh8GqMq8BOGfIHx0p3o3vAzM14QZCtrjs5zEvPVW0fOHtOekO7AMNKWlfUzIfc42kwwMnbJpank5jTOvlYQZDZD",
+        "phone_number_id": "869290406266614",
+        "token": "EAATRllxpiQgBPx2ntcnhbpjAEbB9TXF4tEMMcC3CU78sJHbZBPe7m9QHutKk97l4b5nEnDAa7TVp96YBiYr99KuC2ZAHIHKJPU7Rge3ZANLpyVWldHOUUwkAZB3TLZCy5IIgbvDjNfK6weCpWy1KgklSv1kxPPAyHXZBiZBc2AMLMjpJa9eZBBzSJMxxGC1Cq4unh5SswSLZBnWacvTn1p5K71H5nNGZBPFZA7wql2buXbWzYsZBwMDGH9rVGhx2xkyXiBemZA8xGpnCmkeUiLEkZCsfTBEBWzp5JmvBZCfZCJvFlgZDZD",
         "templates": [
-            "gean"
+            "gilvane"
+        ]
+    },
+    "Teste - BM04": {
+        "phone_number_id": "816011831604137",
+        "token": "EAAVC8MZCQYZBUBPx2JZC5G7LnZAhGgwFPM0IpJzNmpbQWnwk15hMx9sek9ZA0IfL9VFy1TU85JSDOcSRqdkrAtgJeku9lfGC3xIZCXNnKRL8uiP34mc4ZBnlZCpfowInFmfxKZBdXmNfWpSUmY2RkJNZAatg4irnRO7EE1so8ThlZC2y5RQ7GOxCKBushCcwFICHMFF6N9ZC1qWdDKeeHaAAHpzwYqvYJLVlb190049M3MJOY5ZAHqjlblh1ZC0VZAIi42qa79QiZANQo7YW0TPZBaKAnURlC49oE",
+        "templates": [
+            "camila"
+        ]
+    },
+    "Teste - BM03": {
+        "phone_number_id": "876643838858033",
+        "token": "EAATSxiZAgAKgBPxBz17dlwDwfhvVnesGyXJASe2tqXy5KHZCdLShHiqV421vzv1gPHkHB18otq9F7YSw6KEuL3V7TH65dWTM5pzFBaQ5XafSncJT17ZBVdPs6OawtEpKhMCueU4LPF4cw869QzZBFT5RiJ6TbcwvsB9s5hFqAySMouTgWCEzsTP9kS2zSPvHRlUu7iRaTuJs85HChvEbBNLItFhFbjHA9411tM1Ewm3ZAXvJCtDauXUVPFMZBQ1ezu0DEZCBqa44w3DCZCJ1UV5oehUqYmTofp7M1iZBNFAZDZD",
+        "templates": [
+            "ariel"
         ]
     }
 }
