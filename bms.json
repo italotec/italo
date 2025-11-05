@@ -1,23 +1,23 @@
 {
     "Teste - BM01": {
-        "phone_number_id": "891709934033475",
-        "token": "EAALnYMxR6ZCkBPzI1qhLoeCrI4dfsuTcqoP1kHVJAuGYBmqa885lgd6GD8hhvxx7ZCRZAnzftlaiAH4dSu7rfAuNGh5tQaPzsdkfCfXoDYUiSADqeQLPHOtrppH4mfd41QOqg7BaGMmniDDMZAkpQCqo0WySvC4vU1dJUfz1iCMFZC6r3Vmml4oNIZBH7OrFVQt7lO8ecPc4XXDtp3bGCzrGTcOHQ7cPhSihbHPwCarEbRdJ5vky6phUeyZAeKhhavfeeMzX0tfA91GmlYPvQCbaXCXjXvyaSK3hwZDZD",
+        "phone_number_id": "869290406266614",
+        "token": "EAATRllxpiQgBP6ZADf4zpQ0mElZBFFtqUrVRn6pQ1PdTYgN3or2IjjFEVwnq3rqnVsVvzu9XWiB6lOQZB4iPMe21vCDciHrnP8usgCvO0pshlXVWFl6BDOYynCevtk7gR56kgMZCEeIXWzsssgxGfRtrMfvtY9BUFZBZBrS2QNWcJS7IhYdw3R4Ar9bF7JK9eiXoi10XsNA9mrMhRml9RR5xkysvZAmDHaIZA1VBeuYR8YPsn9HPL1QZCC1ip73MuQ7oSlQ2C93Lu1NwxqtWpUKNL6a0ozCd3tZBc0S9OzTQZDZD",
         "templates": [
-            "terezinha"
+            "gilvane"
         ]
     },
     "Teste - BM02": {
         "phone_number_id": "799871226550824",
-        "token": "EAAZBJwea0IGIBP1EfFDkDyVuDTbkQGD4ZCiT7GL3lzkrZBFAxVXWsvLHneRrtFOb9k6WMaRaXZBA3IaDpG3quT3ZAtHP0gy7lNR08XTw5lv2qQLMSqj6Y0p4wqo6nZCZCqZBXrIPcDZAZB6hIBbFd9d1DoPEXWDZBnv2ZBeItPzZBsRakWLcBjZCFVHa5XDtiPZAVa1zcmHuDQLr38zT3S0gdgPP7KPwYHC5soYk5G8sTyYZCLQq6L8H8YLUsGK4mg2z5iDLx4vZAwJqN749Weh4wQ3eAzcL9MQZBVl4XZA8wVXAgA3tKIZD",
+        "token": "EAAZBJwea0IGIBPZBvTLUc4jMLBvIgAX8F4kKjTmpoPgzSBZAxclnhsf7lxU75JToCVkA1JpjUsCJBxXg3Op6IyzKPzRBZBZBslGovyzTJAPhvD06iFBsDavthsxx7PHHYAfAfDAZAzulnxKMI1uAZAtZBKgXZCCsoUH1VNUSZAlSm948oEIYXZBhxP02d9Fx5TLEL4rsTj03a5ulFhZCryN6P6PgbfWpoRozXXQZBl6Opee41JWHyXXnD6qy6ZAxCWvZASkN6XtufxEFHlmv4eQZBGGc48ZCZASoMzSxTt6o0sSNAuwZBcZD",
         "templates": [
             "gabriel"
         ]
     },
     "Teste - BM03": {
-        "phone_number_id": "869290406266614",
-        "token": "EAATRllxpiQgBPx2ntcnhbpjAEbB9TXF4tEMMcC3CU78sJHbZBPe7m9QHutKk97l4b5nEnDAa7TVp96YBiYr99KuC2ZAHIHKJPU7Rge3ZANLpyVWldHOUUwkAZB3TLZCy5IIgbvDjNfK6weCpWy1KgklSv1kxPPAyHXZBiZBc2AMLMjpJa9eZBBzSJMxxGC1Cq4unh5SswSLZBnWacvTn1p5K71H5nNGZBPFZA7wql2buXbWzYsZBwMDGH9rVGhx2xkyXiBemZA8xGpnCmkeUiLEkZCsfTBEBWzp5JmvBZCfZCJvFlgZDZD",
+        "phone_number_id": "891709934033475",
+        "token": "EAALnYMxR6ZCkBPwI8WB5sgwwubay7YtLkKzxJAoUBZAZCwdcNEJ5PrTH8bUZAwwMW8gyw3S1rQ7wpU4ghnH1ZBYZADRCtWCiSROuoNcpZA1FBV3mFuq1EvZBZBbpDlB7SdfW4yOnB1twjRvNqEXxKtqxuWgZC2AHvthuyJDC3ewa4jORhjzC3paovoDtXfBqFXfVHCSYmYmBnGvp3aiVGaFvGhyrLviKiYnZCUb6UW8gkCPD8ZAyJMMQEyVtQ1n22WP9M1fbglzPucYG7j6Dst9ZAfPpn3eVPO1I40uuxLQwZD",
         "templates": [
-            "gilvane"
+            "terezinha"
         ]
     },
     "Teste - BM04": {
