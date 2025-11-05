@@ -96,5 +96,12 @@
         "templates": [
             "luciana"
         ]
+    },
+    "Teste - BM15": {
+        "phone_number_id": "842596642273837",
+        "token": "EAASuryNkjMkBP6U5JjPMmDChrKvSlXlnrnfGJtw9P60PoqqhMg3I4f6FVILaR6vIlqUhjJnVX8zVFylsbRCswjIaPZALP5plZBfbrrzaTGVYqRcifcreBoj9eaKZBPg3zNQavbZABtNdM23j1wgT3DiwAMHqtyVFU1tg6ZAQdmMV2xBsGQG5UbZBcIVTSwDoTKc1VKGfKCCVxlyZBgvVT6UTxFJpneutJJtgX6uGdxVhLHUfh0EBg0h0w5CsFZAvxZB1GgDrf4YJNkRI8wHTUZASOtfamgC7mc6BSwrfmcngZDZD",
+        "templates": [
+            "maria"
+        ]
     }
 }
