@@ -33,5 +33,40 @@
         "templates": [
             "ariel"
         ]
+    },
+    "Teste - BM06": {
+        "phone_number_id": "868236396369987",
+        "token": "EAAThcVz5zG4BP0XspOkCPZAaA9OoxSsy26gQNU2ZCp8Ww7PHU5rAajiflcCKZCxJmbWapSbQJbIfiCXVS5aAON6Ix80JroI1Lq12ZCYSS2UFrEw2GZAACiBLaioeGj0YtZCZACABZBxrib32E16fGKsuhKqVO7GCFX04frojuYa6KuFhA56l4SnC26Q7t3BODdJ3VdAsN3H7GZA4oZAISlgxF3mzoyuWa59RNAX7j24lpBRqrVWuj6FLBv1Glz7h96exJUUeR4O9kwzV5MARY0xZBkdUgZDZD",
+        "templates": [
+            "joyce"
+        ]
+    },
+    "Teste - BM07": {
+        "phone_number_id": "878867315306760",
+        "token": "EAAiK5J2AaXcBP0SPku0MMCXxbdBVH4V1qBDiGI4i7ZA6DbJ8goEd4P9IAKkZAKDiSpMoZC321HeBjs8ZAaZAOUKsbZAkwD1uZCFICT8TCZBXIP1ZBKnISjnZAVyUN6h2k7cVJyOv3X10FUGHq6hc68IzDEojvKdZCzqaZCqBY1jkI0BHIBnxDASF5dZCXa85UBPWlyhaRkHdPlEFEP9JN92oalZBbNsE2k4ZA4xtZCPBT1NBAaAWRFKjtquFpBrzzv0MkrPNCRWdImYCKyVxyOyqZB8YsJTD2mo5mcfccBCrbXQZDZD",
+        "templates": [
+            "marcel"
+        ]
+    },
+    "Teste - BM08": {
+        "phone_number_id": "892495177271323",
+        "token": "EAAV3E5y2kBwBP9KZA5rcqdsrm6gXs6MUd2mC91gHHAvjuCr6HWuIU0LeMmrkWKVS3dZARpXpxJ84oMIzySZCAvu17ZCpmwb82GMLVpsmbfmmaVldVcNcCZCo3Ws687dTXMfwUp4Uv6H9abLUDYWDBX2MIlLNFoa4at8o3O7GCj4weQnRsRBMgLXcNGnsSJ93ioi7ZAKST2OgvnlLMStd27ygNP6bTyNxbFwZAh1UFxD4p3CdBWfBHJZALj4PvxnukxFwIAOf3xiFDZBfgGXk5dcR8gZAlccLZA8W5JnqwZDZD",
+        "templates": [
+            "julio"
+        ]
+    },
+    "Teste - BM09": {
+        "phone_number_id": "894871697035812",
+        "token": "EAAfvKIXcY98BPxCeYoLvmc8EeVZAF0745uPTQLjGK5KVYxkrlZCHRwSWaZAjL9bT8gnCKnnNTLjh8rBGvE9AS0Aob5b6SDplwEt5ZAUGrirZCfnPVLZBcvHZAn2ZACozQzgLuu5XMEsbVck7LXbfseWahGwk0uiqpFpRcmSZCKQQOxqxQjMMdMXLpx11fEmLkzjtgz03O1ZBS5gQHIYG5BKKlWtqeSX4ag4WDcohjekGWZCn3s9EbWZAoQx6sE8oR45IJmG2fb5AQiYqqX1a7jzdYDd95GRVXXbADJ0P1vwqKwZDZD",
+        "templates": [
+            "guilherme"
+        ]
+    },
+    "Teste - BM10": {
+        "phone_number_id": "876643838858033",
+        "token": "EAATSxiZAgAKgBPxBz17dlwDwfhvVnesGyXJASe2tqXy5KHZCdLShHiqV421vzv1gPHkHB18otq9F7YSw6KEuL3V7TH65dWTM5pzFBaQ5XafSncJT17ZBVdPs6OawtEpKhMCueU4LPF4cw869QzZBFT5RiJ6TbcwvsB9s5hFqAySMouTgWCEzsTP9kS2zSPvHRlUu7iRaTuJs85HChvEbBNLItFhFbjHA9411tM1Ewm3ZAXvJCtDauXUVPFMZBQ1ezu0DEZCBqa44w3DCZCJ1UV5oehUqYmTofp7M1iZBNFAZDZD",
+        "templates": [
+            "ariel"
+        ]
     }
 }
