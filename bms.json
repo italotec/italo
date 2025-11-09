@@ -1,9 +1,9 @@
 {
     "Teste - BM01": {
-        "phone_number_id": "891709934033475",
-        "token": "EAALnYMxR6ZCkBP5li9rwiGkdGL043mQ4xd4fwv6IOAaFJB3Q2qcp07fxYjVwaDdlDvUuk9mI7SP5Jv35THZCFCq1jmkBfDYmjCtkZCps5myLxDQl65UdLr6ncJDgtNtYD0oD66FjhSyZA0kWZB9BX10IZAkqa6StZCZChF6fuiiWAjwtnHHvSsIjKR1PO6M9bfJ73ojYTEJwpq77vZBQ5EDRGyorxnce67pblPuOJAUZCbDqKtRu8vKhxzPPTZCoT9eSvph6SZCLfq4SpsfZBYWnf3GeCewkR1DKz3oXfcMIZD",
+        "phone_number_id": "869432242916061",
+        "token": "EAAVwsJd3ZCQ8BPx8EEjgIo0m7xZCPZBjhgpCjWdTbMpe5lVnSm2UKGeXrvjEIV7dbq97q7IBPeOLV5JqL53BCFgySMbNO5MBAKYTMwF1R39se5KHMzov1vM7dZBu2hdzAMbuz5OoZAxk2i6E1p4M78jgmJ8gjM9cDS1XfFCnBz9oPEZAhES2s6WmMqVw6WgSNRHbRlqT5wcUPgVxg7SWZA35F4XykwnAZATEymXb6yPRzi4TZBpqqnHRFkvclNcZBfc8oW8Sq2G9mLbZAHAWoxPlXqO2n3qCoWIgSzlgxy4VgZDZD",
         "templates": [
-            "terezinha"
+            "answer"
         ]
     },
     "Teste - BM02": {
@@ -50,9 +50,9 @@
     },
     "Teste - BM08": {
         "phone_number_id": "877304625463203",
-        "token": "EAARCi91fPwkBPyYcX0Q9rZAWYATYdx29i6pQxCFOoRGb9jaPK3IqrjZCGpYoScViMdNjx2BY6x1HDkCkISNZA6iNchBo1VFxOSIXDE0lZAGVCzE3NHOl4kIEqjmakJkah2bZASlA1FKm76so3RZBqHLZAVIVUSmT3e9dEZCyNeeMkUdUJUNrDbUsokAYczZBwCPT9xd7YrEXNhZAhaV4J18oCmu9GzqkzwslyuRDhZCqmsa5wZBXR3wmvKBwlzoIZA4iWYHr0YrTngTVoBmuKqRv1wPxKCwZDZD",
+        "token": "EAAVwsJd3ZCQ8BPZBMEhqZCwWlP9BD677MFXzHtKMg9hN2wk5r4ZAecVKkD4SZBAwebjYPooqsB5630U9A2bPKSZBrXEvPXZCh2gnGr5ZCAkGnRoXRqTzRkKbrX4GZAHjZBIdmAudKligcD20v3PPbobptzGZAzfvLEpSLcfrHQ84zuUiAVl2tpWHGugylthS59gTA0S8ryHFSDAaShXTMJSnj15VZAHGNp4nwbloXuAnon69jmXc4muqwx20es45hW6iSZArVVbWsV54fZA4KNufaFds3ZB7OiHFsM22syX871bIAZDZD",
         "templates": [
-            "quantico01"
+            "answer"
         ]
     },
     "Teste - BM10": {
