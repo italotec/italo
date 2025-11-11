@@ -41,11 +41,11 @@
             "fara01"
         ]
     },
-    "Teste - BM07": {
-        "phone_number_id": "836135156256029",
-        "token": "EAAQZChGdbFHABP94Av931YjhGxPUZBfcNzr0fNcSU9B0nUnPgdvZBfC8XKVFsbC5ZA0f83mTEE91pUyOKZCyyscveyDtS9oBhxmwubnDnf2piFRiZAfcZBHaYUPS5eLZBOZAzZAstzYsyKUOWGSdIemviyNxh0CTuPvvzTSQ9eu3XFWH712lGD1AW8LuZBjbGIN301gtxNtiPt6SwmtjN0ZAAq0pKcKypWlxLZA2ScYZBgNIjayJHvPvV6ZAIPiwbfB5If6EF9ZCWhXMD9rZBdO5fZAYh921os33bh5LhXVIs002Na8gZDZD",
+    "183": {
+        "phone_number_id": "891709934033475",
+        "token": "EAALnYMxR6ZCkBP2q2qnYd51yBoPrjYq1ZBQpwz2B2DTQqWAy9l8vWYfvfUeDAvPd5QdRgzaW2V2MD3w5w46hJrBFTIhKBmjPiBohzOAcZAoWK3N1ghEX1tbX5wpZBLC64pT3ibGbLlCafb6e6RaS5cKyeK5G71It3Mle2oChdr4eEchHrKPYGKrQkk4V0gD4ZAZA6Em33VDrRMBJaXecI7O8iZAuVh2bclKZC0Ga",
         "templates": [
-            "para01"
+            "terezinha"
         ]
     },
     "Teste - BM08": {
@@ -63,10 +63,10 @@
         ]
     },
     "Teste - BM11": {
-        "phone_number_id": "877304625463203",
-        "token": "EAARCi91fPwkBP40b0mHK6Kjni35U58w0eZBoWP2ZCHOHDLG9HRDcCdmPZCKARkVDKfPTZA7kQFtKJYRDmdNTBQpcXQDzT2ksxDT0VxAgk3hlLIv9vdOQvrzzOdS9t1ZBSvdekxdEDyDKaNWQDrpVN5Gj250a0slfI1R7ZBMTerSf0UoYT3L1VAYNNVPhonDZBZBrz3y6zapvokPZC0gUGzDyArMB0sXTPp0oRPYjZBypxWz1Pu0Gox4KTLZBPE7wLhgKRZCNFmEZCxNtJuO7tGukkBJDh",
+        "phone_number_id": "828511657015303",
+        "token": "EAATRoVTNXDgBP91gwDWrZAwg3fdbVv3XP7SMKYsd6X7XWpVFFePPkdimpBti1yWbJrC6UaAfnz65nbkdqhXuT1AT0w8jFBm3exiZBzoonhRSMQxUai4br7QrV8pF7IyJmil0l7A43IBp5FUQ3HYwRgw68a7pIh5MrROi8eIgwLppRgLVnRzetYL2lZCLeOTO54rLqJD8WZACuz35LhE2kH9EfSgoFjP2Um7M6LnoZAnZCZC5CF4G2GuKce2N3pxPhWZBSCZCEJ5fpGdT9oCEikt7Qdd5uuMATTgneCAZDZD",
         "templates": [
-            "quantico01"
+            "atualizacao_juana"
         ]
     }
 }
