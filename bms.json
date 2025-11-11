@@ -56,17 +56,17 @@
         ]
     },
     "Teste - BM10": {
-        "phone_number_id": "782559241617359",
+        "phone_number_id": "873451872518698",
         "token": "EAAQZChGdbFHABPz2yZAhliF0iMZBzw8FN3dJ2KKUdZC7m4TMNY9S6kq0AhtSKABWEMhxEezZBGOe6mpO7y1ZBf4nlqOZBdWiStZBIZAh6aVH6mMxC7ZCU0NnhTmyahb4SJYmNg6zRdM8lONJI1tKLA7JwQbz31VvvTZBbmK7mZAfephVv9DynM7EFIEVsjwW6QqP7GsTFdAp6RZAqrZCOCUgT3FyEohMUQFxVc13G7uGYPFzxbwZCu0w1mOokDgyYWK9lW3O3JZBdKIK84O3ROVj4MXQMtBinIci2Nr4ZAsyyWpma5gZDZD",
         "templates": [
-            "para01"
+            "answering"
         ]
     },
     "Teste - BM11": {
         "phone_number_id": "828511657015303",
-        "token": "EAATRoVTNXDgBP91gwDWrZAwg3fdbVv3XP7SMKYsd6X7XWpVFFePPkdimpBti1yWbJrC6UaAfnz65nbkdqhXuT1AT0w8jFBm3exiZBzoonhRSMQxUai4br7QrV8pF7IyJmil0l7A43IBp5FUQ3HYwRgw68a7pIh5MrROi8eIgwLppRgLVnRzetYL2lZCLeOTO54rLqJD8WZACuz35LhE2kH9EfSgoFjP2Um7M6LnoZAnZCZC5CF4G2GuKce2N3pxPhWZBSCZCEJ5fpGdT9oCEikt7Qdd5uuMATTgneCAZDZD",
+        "token": "EAATDGHrZAP4cBPZCPArRZAB9xtubvYimCVXBvm8DAIYX51Rf2ImON11R5h16pdRlS01lv1g8olTmSjpF2c0HcEgI5htYpOsXvdmdoOVHhlWTZBqZBD6Lgfy7XWd9utqjtnKQwxmpM26LPmRZBglhZA67kmT5Ly8SqR1HTC6kkh7gJTnvXpdEoj1E9SuWW69ZAMu6yqLvDWWr3D7YVZCd9FT1Ab3pqY5nQ6i7YcsRMDBnc",
         "templates": [
-            "atualizacao_juana"
+            "answering"
         ]
     }
 }
