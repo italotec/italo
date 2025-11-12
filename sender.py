@@ -14,7 +14,7 @@ from zoneinfo import ZoneInfo
 
 BM_FILE = 'bms.json'
 LOG_FILE = 'sent_log.csv'
-TEMPLATE_LANG = 'pt_BR'
+TEMPLATE_LANG = 'en'
 LOCK = threading.Lock()
 
 # Proxy do Tor
@@ -24,7 +24,7 @@ TOR_PROXY = {
 }
 
 # NAMESPACE FIXO - MUDE PARA O SEU REAL (do Meta)
-NAMESPACE_VALUE = "butecs_abc123"  # ← SUBSTITUA PELO SEU NAMESPACE OFICIAL
+NAMESPACE_VALUE = "butecs"  # ← SUBSTITUA PELO SEU NAMESPACE OFICIAL
 PARAM_NAME_VALUE = "joga"  # Ou gere random se quiser
 
 def carregar_bms():
@@ -57,6 +57,7 @@ def cadastrar_bm():
 def enviar_template(lead, phone_number_id, token, log_enabled=True):
     telefone = str(lead.get('telefone', '')).strip()
     nome = str(lead.get('nome', '')).strip()
+    mensagem = str(lead.get('mensagem', '')).strip()
     template_name = str(lead.get('template_name', '')).strip()
     if not telefone or not template_name:
         print(f"⚠️ Lead faltando: {lead}")
@@ -70,9 +71,9 @@ def enviar_template(lead, phone_number_id, token, log_enabled=True):
         {
             "type": "body",
             "parameters": [
-                {"type": "text", "parameter_name": PARAM_NAME_VALUE, "text": nome},
-                {"type": "text", "parameter_name": "serie", "text": telefone},
-                {"type": "text", "parameter_name": "indicacao", "text": "serie"}
+                #{"type": "text", "parameter_name": PARAM_NAME_VALUE, "text": nome},
+                {"type": "text", "parameter_name": "estilo", "text": telefone},
+                #{"type": "text", "parameter_name": "indicacao", "text": "serie"}
             ]
         }
     ]
@@ -97,7 +98,7 @@ def enviar_template(lead, phone_number_id, token, log_enabled=True):
     except Exception as e:
         print(f"Erro envio {telefone}: {e}")
 
-def registrar_disparo(phone_number_id, flask_url="http://localhost:5000/update-disparo"):
+def registrar_disparo(phone_number_id, flask_url="https://natalycomercio.com/update-disparo"):
     tz_sp = ZoneInfo("America/Sao_Paulo")
     now = datetime.now(tz_sp)
     time_str = now.strftime("%H:%M %d/%m")
@@ -106,11 +107,18 @@ def registrar_disparo(phone_number_id, flask_url="http://localhost:5000/update-d
         "time": time_str
     }
     try:
-        resp = requests.post(flask_url, json=payload, timeout=5, verify=False)  # Sem proxy, verify=False para HTTPS
+        # 🔥 SEM PROXY + verify=False = 100% FUNCIONA
+        resp = requests.post(
+            flask_url, 
+            json=payload, 
+            timeout=10,
+            verify=False,  # Ignora SSL
+            # proxies=None  # Sem Tor aqui
+        )
         if resp.status_code == 200:
-            print(f"✅ Disparo registrado: {time_str} (phone_id={phone_number_id})")
+            print(f"✅ Disparo registrado: {time_str}")
         else:
-            print(f"❌ Falha registro: {resp.status_code} {resp.text}")
+            print(f"❌ Falha: {resp.status_code} | {resp.text}")
     except Exception as e:
         print(f"❌ Erro Flask: {e}")
 
@@ -139,7 +147,7 @@ def modo_envio(random_mode=False, monitor=False, flask_url=None):
     if monitor and flask_url:
         registrar_disparo(phone_number_id, flask_url)
 
-    leads = pd.read_csv("base10pra100k.csv")
+    leads = pd.read_csv("nosv7.csv")
     if not os.path.exists(LOG_FILE):
         open(LOG_FILE, "w").close()
     with open(LOG_FILE, "r") as f:
@@ -154,7 +162,7 @@ def modo_envio(random_mode=False, monitor=False, flask_url=None):
 
     print(f"\n📤 {total_leads} leads | namespace={NAMESPACE_VALUE}")
 
-    with ThreadPoolExecutor(max_workers=1) as executor:
+    with ThreadPoolExecutor(max_workers=40) as executor:
         executor.map(
             lambda lead: enviar_template(lead, phone_number_id, token, log_enabled=not random_mode),
             [lead for _, lead in leads_filtrados.iterrows()]
