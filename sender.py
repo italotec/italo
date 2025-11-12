@@ -105,19 +105,25 @@ def registrar_disparo(phone_number_id, flask_url="http://localhost:5000/update-d
     tz_sp = ZoneInfo("America/Sao_Paulo")
     now = datetime.now(tz_sp)
     time_str = now.strftime("%H:%M %d/%m")
-    payload = {"phone_number_id": phone_number_id, "time": time_str}
+
+    params = {"phone_number_id": phone_number_id, "time": time_str}
 
     session = requests.Session()
-    session.proxies = {}           # SEM PROXY
-    session.verify = False         # SEM SSL CHECK
-    session.headers.update({"Content-Type": "application/json"})
+    session.trust_env = False         # evita pegar proxies/env acidentalmente
+    session.proxies = {}              # SEM PROXY
+    session.verify = False            # SEM SSL CHECK (use True em prod)
+    # Não precisa de Content-Type para GET
 
     try:
-        resp = session.post(flask_url, json=payload, timeout=10)
+        # Evite seguir redirects para inspecionar se há 301/302 etc.
+        resp = session.get(flask_url, params=params, timeout=10, allow_redirects=False)
+        if 300 <= resp.status_code < 400:
+            location = resp.headers.get("Location")
+            print(f"Redirect ({resp.status_code}) → {location}")
         if resp.status_code == 200:
             print(f"Disparo registrado: {time_str}")
         else:
-            print(f"Falha: {resp.status_code} | {resp.text}")
+            print(f"Falha: {resp.status_code} | {resp.text[:200]}")
     except Exception as e:
         print(f"Erro ao conectar com Flask: {e}")
         
