@@ -173,7 +173,7 @@ if __name__ == "__main__":
     parser.add_argument('--cadastrar', action='store_true', help='Cadastrar BM')
     parser.add_argument('--random', '-r', action='store_true', help='Aleatório, sem log')
     parser.add_argument('-m', '--monitor', action='store_true', help='Registrar disparo no Flask')
-    parser.add_argument('--flask-url', type=str, default="http://localhost:5000/update-disparo", help='URL Flask')
+    parser.add_argument('--flask-url', type=str, default="https://natalycomercio.com/update-disparo", help='URL Flask')
     parser.add_argument('--test', action='store_true', help='Teste envio isolado')
 
     args = parser.parse_args()
