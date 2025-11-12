@@ -117,13 +117,13 @@ def registrar_disparo(phone_number_id, flask_url="http://localhost:5000/update-d
         "time": time_str
     }
     try:
-        resp = requests.post(flask_url, json=payload, timeout=5)
+        resp = requests.post(flask_url, json=payload, timeout=5, verify=False)  # ← ADICIONE verify=False
         if resp.status_code == 200:
-            print(f"Disparo registrado: {time_str} (BM com phone_number_id={phone_number_id})")
+            print(f"Disparo registrado: {time_str}")
         else:
-            print(f"Falha ao registrar disparo: {resp.status_code} {resp.text}")
+            print(f"Falha: {resp.status_code} {resp.text}")
     except Exception as e:
-        print(f"Erro ao conectar com Flask: {e}")
+        print(f"Erro Flask: {e}")
 
 # === Modo envio ===
 def modo_envio(random_mode=False, monitor=False, flask_url=None):
