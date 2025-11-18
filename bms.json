@@ -26,5 +26,12 @@
         "templates": [
             "essay"
         ]
+    },
+    "BM DO FRIEND": {
+        "phone_number_id": "911071545413451",
+        "token": "EAAmfxZAMgJj4BP0MeUvqVhrpagzYz1O3igEaZBY8U7r0fwQA2o5e9SLi7QQgZA9sZCbak1o4Nh9xHHKukTncUAfJRuvzyMsW7FUlICyXGC6OCKuDUhiwNKhZClxpTr37kTm6el3rmtUStChgMALgKpkJ89RvhkQ6ID0ZCJyw9BUFeQDdakZBhvsELcXkVFHWU8TQeZBBJVTxp78jbUw2PADfLnodZC77r3Nb1llqEeYDnRCIObyQC1PmO0VNG73hlTqLYm5HjXvA0qAPjYsLBRsJtk3608NcMB6EpVgZDZD",
+        "templates": [
+            "conferencia_03"
+        ]
     }
 }
