@@ -61,5 +61,12 @@
         "templates": [
             "notificacao_sistema"
         ]
+    },
+    "2d-1": {
+        "phone_number_id": "860513713811607",
+        "token": "EAATCZCP7rF9wBQNmNFocpJPINfo92v7XQVk8IdNqWFMZBWTom1AAprL6ytdSYPhakLrb3N76fZAAmVZAf9xf056l0I6KThK4ruEMu9Xo7SszFIq05EvEZClEVB9MtGAa1pjvrmYLnZA9rUSHZBbjvl3LaGRuPhjXDKPkRTGS5cU9ZByfRPTVLJRklnpXQWbaVYZCwIAZB9ZBExa8BTcq71lhPNgBYFzNoqDwOJ8a5MzUd8Q",
+        "templates": [
+            "aula_temporaria3"
+        ]
     }
 }
