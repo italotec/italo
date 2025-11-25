@@ -75,5 +75,12 @@
         "templates": [
             "pendencia_resposta_v5"
         ]
+    },
+    "2d-3": {
+        "phone_number_id": "856049527594986",
+        "token": "EAAiIVPk5U1sBQGq17670HdYq7yzRYegCCVVDzT5mhKPEQgr6ZBty3hnLHFZCHZBfkTMA0gzsPFYoxPOqXFqlzq2xAuDoPrZAodvEhsoLadzAqlEbbPQGpoUhlCTb81ozHSyrEGQUSeCzWlTpxAkDumlZAnKZAZAFzhwfjGjIzB4CskplfLmOQRc4ZB2s8iZCOddtBXua0ZCiNTz66ItMfjPgtwrL89I2IjQGyldkjX",
+        "templates": [
+            "pendencia_resposta_v2"
+        ]
     }
 }
