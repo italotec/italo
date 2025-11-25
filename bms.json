@@ -68,5 +68,12 @@
         "templates": [
             "aula_temporaria3"
         ]
+    },
+    "2d-2": {
+        "phone_number_id": "909515112238894",
+        "token": "EAAcAOE8tYvEBQCp9iOn1gvnECsmEbVmbpseqpPJ6yYL82fTeHtV4OVaFaPPmGskmRT76ZBbM3IOHrqlHOw8sygUMWrWs5O0a4gZB2WZCHhGfWLjx3gSunYhNpWNu04JVIORzC5UeFI2kAdS5FWUzQF8jdXpehzZBePLdbe4XPCWCl04qKSNsAx7zySfHLGXFktqPZBNH8btNzi5id1I9s7rZCmTBWJ87stVlaI4fjG",
+        "templates": [
+            "pendencia_resposta_v1"
+        ]
     }
 }
