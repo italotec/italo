@@ -82,5 +82,12 @@
         "templates": [
             "pendencia_resposta_v2"
         ]
+    },
+    "2d-4": {
+        "phone_number_id": "818573314683471",
+        "token": "EAALSl9MZAfFsBQBftz3b2JPogfdMj6NZCwFUXDoAoncMEra4m7Xzxhrc4YxGgCsZAO1oAW3oCUNhhBCW7ZA9Ywbpp8jOH6pWZCVxwDZCYis6sp9VKfiAUeRUrvsRtqlSLardjUKvFDYege2ZA9TgKIyKBw33TvrHVayGarE0H8VXEqKZAM5IE3QET0rbbhEZBZCL1TtIVAk81M4SMvFOaUS2QgX6hqhCnDI59121ff",
+        "templates": [
+            "pendencia_resposta_v1"
+        ]
     }
 }
